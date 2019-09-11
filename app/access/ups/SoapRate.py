@@ -3,12 +3,19 @@ import xml.etree.ElementTree as ET
 from zeep import Client, Settings
 from zeep.exceptions import Fault, TransportError, XMLSyntaxError
 
-def get_rates():
+def get_rates(params, service_code):
     # Set Connection
     settings = Settings(strict=False, xml_huge_tree=True)
     client = Client('app/access/ups/SCHEMA-WSDLs/RateWS.wsdl', settings=settings)
+    # client = Client('SCHEMA-WSDLs/RateWS.wsdl', settings=settings)
+
+    # Get login info
     with open('app/access/creds/ups.json', 'r') as f:
+    # with open('../creds/ups.json') as f:
         credentials = json.load(f)['credentials']
+
+    # Get dimensions and location
+    zipcode, weight, length, width, height = params
 
     # Set SOAP headers
     headers = {
@@ -40,9 +47,9 @@ def get_rates():
 
         "Package": {
             "Dimensions": {
-                "Height": "10",
-                "Length": "5",
-                "Width": "4",
+                "Height": height,
+                "Length": length,
+                "Width": width,
                 "UnitOfMeasurement": {
                     "Code": "IN",
                     "Description": "inches"
@@ -53,7 +60,7 @@ def get_rates():
                     "Code": "Lbs",
                     "Description": "pounds"
                 },
-                "Weight": "1"
+                "Weight": weight
             },
             "PackagingType": {
                 "Code": "02",
@@ -61,7 +68,7 @@ def get_rates():
             }
         },
         "Service": {
-            "Code": "03",
+            "Code": service_code,
             "Description": "Service Code"
         },
         "ShipFrom": {
@@ -79,10 +86,8 @@ def get_rates():
         "ShipTo": {
             "Address": {
                 "CountryCode": "US",
-                "PostalCode": "91732",
-                "StateProvinceCode": "CA"
-            },
-            "Name": "Ranc"
+                "PostalCode": zipcode,
+            }
         },
         "Shipper": {
             "Address": {
@@ -105,7 +110,16 @@ def get_rates():
     try:
         response = client.service.ProcessRate(_soapheaders=headers, Request=requestDictionary,
                                             Shipment=rateRequestDictionary)
-        return(response['RatedShipment'])
+        # return(response['RatedShipment'][0])
+        response = response['RatedShipment'][0]
+        return([response['BillingWeight']['Weight'],
+                response['NegotiatedRateCharges']['TotalCharge']['MonetaryValue'],
+                response['RatedPackage'][0]['TotalCharges']['MonetaryValue']])
 
     except Fault as error:
         print(ET.tostring(error.detail))
+
+if __name__ == "__main__":
+    d = [98008, 1, 1, 1, 1]
+    rates = get_rates(d, "59")
+    print(rates)
