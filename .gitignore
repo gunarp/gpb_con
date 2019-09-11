@@ -1,5 +1,6 @@
 API DOCS/
-app/creds/*
+./app/access/creds
+./app/access/creds/*
 # Created by https://www.gitignore.io/api/flask,python,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=flask,python,visualstudiocode
 
@@ -189,6 +190,7 @@ dmypy.json
 # Pyre type checker
 
 ### VisualStudioCode ###
+.vscode/
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
