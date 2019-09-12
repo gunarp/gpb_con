@@ -1,3 +1,5 @@
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
 <form method="POST" autocomplete="off">
     Zipcode:
     <input type="number" name="zipcode" value="{{ request.form['zipcode'] }}" min=10000 max=99999>
