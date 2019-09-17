@@ -1,9 +1,5 @@
 <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 
-{% for message in get_flashed_messages() %}
-    {{ message }}
-{% endfor %}
-
 <form method="POST" autocomplete="off">
     Zipcode:
     <input type="text" name="zipcode" value="{{ request.form['zipcode'] }}" maxlength=5>
@@ -18,9 +14,3 @@
 
     <input type="submit">
 </form>
-
-{% if response is not none %}
-    {% for table in rates %}
-        {{ table|safe }}        
-    {% endfor %}
-{% endif %}

@@ -1,4 +1,5 @@
 import json
+import re
 import xml.etree.ElementTree as ET
 from zeep import Client, Settings
 from zeep.exceptions import Fault, TransportError, XMLSyntaxError
@@ -117,9 +118,10 @@ def get_rates(params, service_code):
                 response['RatedPackage'][0]['TotalCharges']['MonetaryValue']])
 
     except Fault as error:
-        print(ET.tostring(error.detail))
+        error = str(ET.tostring(error.detail))
+        return re.search('Description>(?P<text>.*?)</ns0:', error).group(1)
 
 if __name__ == "__main__":
-    d = [98008, 1, 1, 1, 1]
+    d = ['1adev', 1, 1, 1, 1]
     rates = get_rates(d, "59")
     print(rates)
