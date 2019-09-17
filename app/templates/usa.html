@@ -6,23 +6,22 @@
     {{ message }}
 {% endfor %}
 
+<div>
 <form method="POST" autocomplete="off">
     Zipcode:
-    <input type="text" name="zipcode" value="{{ request.form['zipcode'] }}" maxlength=5>
+    <input type="text" name="zipcode" value="{{ request.form['zipcode'] }}" maxlength=5 requried>
     Weight:
-    <input type="number" name="weight" value="{{ request.form['weight'] }}" min=1>
+    <input type="number" name="weight" value="{{ request.form['weight'] }}" min=1 requried>
     Length:
-    <input type="number" name="length" value="{{ request.form['length'] }}" min=1 max=1000>
+    <input type="number" name="length" value="{{ request.form['length'] }}" min=1 max=1000 required>
     Width:
-    <input type="number" name="width" value="{{ request.form['width'] }}" min=1 max=1000>
+    <input type="number" name="width" value="{{ request.form['width'] }}" min=1 max=1000 required>
     Height:
-    <input type="number" name="height" value="{{ request.form['height'] }}" min=1 max=1000>
-    Submit!
+    <input type="number" name="height" value="{{ request.form['height'] }}" min=1 max=1000 required>
     <input type="submit">
     </form>
 </div>
-
-<p><a href="{{ url_for('login') }}">Login</a></p>
+<div><p><a href="{{ url_for('login') }}">Login</a></p></div>
 
 {% if response is not none %}
     {% for table in rates %}

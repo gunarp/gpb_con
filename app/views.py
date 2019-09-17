@@ -7,18 +7,17 @@ from flask import Flask, request, render_template, redirect, url_for, flash
 from app.crunch import ups_rates
 
 @app.route('/', methods=['GET', 'POST'])
-def get_rate():
+def index():
     if request.method == 'GET':
-        return render_template('index.html', response=None)
+        return render_template('usa.html', response=None, title='home')
     else:
         ups = ups_rates(request.form.to_dict().values())
-        print(ups)
         if isinstance(ups, pd.DataFrame):
             ups_table = ups.to_html(classes='data', header='true')
-            return render_template('usa.html', rates=[ups_table])
+            return render_template('usa.html', rates=[ups_table], title='results')
         else:
             flash(ups)
-            return render_template('usa.html', response=None)
+            return render_template('usa.html', response=None, title='error - try again')
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
