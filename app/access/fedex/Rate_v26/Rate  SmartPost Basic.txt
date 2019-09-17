@@ -1,0 +1,489 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://fedex.com/ws/rate/v26">
+   <SOAP-ENV:Body>
+      <RateRequest>
+         <WebAuthenticationDetail>
+            <ParentCredential>
+               <Key>Input Your Information</Key>
+               <Password>Input Your Information</Password>
+            </ParentCredential>
+            <UserCredential>
+               <Key>Input Your Information</Key>
+               <Password>Input Your Information</Password>
+            </UserCredential>
+         </WebAuthenticationDetail>
+         <ClientDetail>
+            <AccountNumber>Input Your Information</AccountNumber>
+            <MeterNumber>Input Your Information</MeterNumber>
+         </ClientDetail>
+         <TransactionDetail>
+            <CustomerTransactionId>TC062_SMART_POST with YourPackaging</CustomerTransactionId>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>crs</ServiceId>
+            <Major>26</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <RequestedShipment>
+            <ShipTimestamp>2019-07-24T12:34:56-06:00</ShipTimestamp>
+            <DropoffType>REGULAR_PICKUP</DropoffType>
+            <ServiceType>SMART_POST</ServiceType>
+            <PackagingType>YOUR_PACKAGING</PackagingType>
+            <PreferredCurrency>USD</PreferredCurrency>
+              <Shipper>
+                <Contact>
+                  <PersonName>Input Your Information</PersonName>
+                  <CompanyName>Input Your Information</CompanyName>
+                  <PhoneNumber>Input Your Information</PhoneNumber>
+                  <EMailAddress>Input Your Information</EMailAddress>
+               </Contact>
+               <Address>
+                  <StreetLines>Input Your Information</StreetLines>
+                  <StreetLines>Input Your Information</StreetLines>
+                  <City>Input Your Information</City>
+                  <StateOrProvinceCode>Input Your Information</StateOrProvinceCode>
+                  <PostalCode>Input Your Information</PostalCode>
+                  <CountryCode>Input Your Information</CountryCode>
+               </Address>
+            </Shipper>
+            <Recipient>
+               <Contact>
+                  <PersonName>Input Your Information</PersonName>
+                  <CompanyName>Input Your Information</CompanyName>
+                  <PhoneNumber>Input Your Information</PhoneNumber>
+                  <EMailAddress>Input Your Information</EMailAddress>
+               </Contact>
+               <Address>
+                  <StreetLines>Input Your Information</StreetLines>
+                  <StreetLines>Input Your Information</StreetLines>
+                  <City>Input Your Information</City>
+                  <StateOrProvinceCode>Input Your Information</StateOrProvinceCode>
+                  <PostalCode>Input Your Information</PostalCode>
+                  <CountryCode>Input Your Information</CountryCode>
+               </Address>
+            </Recipient>
+            <ShippingChargesPayment>
+               <PaymentType>SENDER</PaymentType>
+               <Payor>
+                  <ResponsibleParty>
+                     <AccountNumber>Input Your Information</AccountNumber>
+                  </ResponsibleParty>
+               </Payor>
+            </ShippingChargesPayment>
+            <SmartPostDetail>
+               <Indicia>PARCEL_SELECT</Indicia>
+               <AncillaryEndorsement>ADDRESS_CORRECTION</AncillaryEndorsement>
+               <HubId>5751</HubId>
+            </SmartPostDetail>
+            <RateRequestTypes>LIST</RateRequestTypes>
+            <PackageCount>1</PackageCount>
+            <RequestedPackageLineItems>
+               <SequenceNumber>1</SequenceNumber>
+               <GroupNumber>1</GroupNumber>
+               <GroupPackageCount>1</GroupPackageCount>
+               <Weight>
+                  <Units>LB</Units>
+                  <Value>20.0</Value>
+               </Weight>
+               <Dimensions>
+                  <Length>6</Length>
+                  <Width>4</Width>
+                  <Height>1</Height>
+                  <Units>IN</Units>
+               </Dimensions>
+               <CustomerReferences>
+                  <CustomerReferenceType>CUSTOMER_REFERENCE</CustomerReferenceType>
+                  <Value>TC001_01_PT1_ST01_PK01_SNDUS_RCPCA_POS</Value>
+               </CustomerReferences>
+            </RequestedPackageLineItems>
+         </RequestedShipment>
+      </RateRequest>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+Response:
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <RateReply xmlns="http://fedex.com/ws/rate/v26">
+         <HighestSeverity>SUCCESS</HighestSeverity>
+         <Notifications>
+            <Severity>SUCCESS</Severity>
+            <Source>crs</Source>
+            <Code>0</Code>
+            <Message>Request was successfully processed.</Message>
+            <LocalizedMessage>Request was successfully processed.</LocalizedMessage>
+         </Notifications>
+         <TransactionDetail>
+            <CustomerTransactionId>TC062_SMART_POST with YourPackaging</CustomerTransactionId>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>crs</ServiceId>
+            <Major>26</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <RateReplyDetails>
+            <ServiceType>SMART_POST</ServiceType>
+            <ServiceDescription>
+               <ServiceType>SMART_POST</ServiceType>
+               <Names>
+                  <Type>long</Type>
+                  <Encoding>utf-8</Encoding>
+                  <Value>FedEx SmartPost®</Value>
+               </Names>
+               <Names>
+                  <Type>long</Type>
+                  <Encoding>ascii</Encoding>
+                  <Value>FedEx SmartPost</Value>
+               </Names>
+               <Names>
+                  <Type>medium</Type>
+                  <Encoding>utf-8</Encoding>
+                  <Value>SmartPost®</Value>
+               </Names>
+               <Names>
+                  <Type>medium</Type>
+                  <Encoding>ascii</Encoding>
+                  <Value>SmartPost</Value>
+               </Names>
+               <Names>
+                  <Type>short</Type>
+                  <Encoding>utf-8</Encoding>
+                  <Value>SP</Value>
+               </Names>
+               <Names>
+                  <Type>short</Type>
+                  <Encoding>ascii</Encoding>
+                  <Value>SP</Value>
+               </Names>
+               <Names>
+                  <Type>abbrv</Type>
+                  <Encoding>ascii</Encoding>
+                  <Value>SP</Value>
+               </Names>
+               <Description>Smart Post</Description>
+               <AstraDescription>SMART POST</AstraDescription>
+            </ServiceDescription>
+            <PackagingType>YOUR_PACKAGING</PackagingType>
+            <IneligibleForMoneyBackGuarantee>false</IneligibleForMoneyBackGuarantee>
+            <SignatureOption>SERVICE_DEFAULT</SignatureOption>
+            <ActualRateType>PAYOR_ACCOUNT_PACKAGE</ActualRateType>
+            <RatedShipmentDetails>
+               <EffectiveNetDiscount>
+                  <Currency>USD</Currency>
+                  <Amount>9.97</Amount>
+               </EffectiveNetDiscount>
+               <ShipmentRateDetail>
+                  <RateType>PAYOR_ACCOUNT_PACKAGE</RateType>
+                  <RateZone>4</RateZone>
+                  <RatedWeightMethod>ACTUAL</RatedWeightMethod>
+                  <DimDivisor>0</DimDivisor>
+                  <FuelSurchargePercent>5.5</FuelSurchargePercent>
+                  <TotalBillingWeight>
+                     <Units>LB</Units>
+                     <Value>20.0</Value>
+                  </TotalBillingWeight>
+                  <TotalBaseCharge>
+                     <Currency>USD</Currency>
+                     <Amount>10.28</Amount>
+                  </TotalBaseCharge>
+                  <TotalFreightDiscounts>
+                     <Currency>USD</Currency>
+                     <Amount>1.95</Amount>
+                  </TotalFreightDiscounts>
+                  <TotalNetFreight>
+                     <Currency>USD</Currency>
+                     <Amount>8.33</Amount>
+                  </TotalNetFreight>
+                  <TotalSurcharges>
+                     <Currency>USD</Currency>
+                     <Amount>0.46</Amount>
+                  </TotalSurcharges>
+                  <TotalNetFedExCharge>
+                     <Currency>USD</Currency>
+                     <Amount>8.79</Amount>
+                  </TotalNetFedExCharge>
+                  <TotalTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalTaxes>
+                  <TotalNetCharge>
+                     <Currency>USD</Currency>
+                     <Amount>8.79</Amount>
+                  </TotalNetCharge>
+                  <TotalRebates>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalRebates>
+                  <TotalDutiesAndTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalDutiesAndTaxes>
+                  <TotalAncillaryFeesAndTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalAncillaryFeesAndTaxes>
+                  <TotalDutiesTaxesAndFees>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalDutiesTaxesAndFees>
+                  <TotalNetChargeWithDutiesAndTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>8.79</Amount>
+                  </TotalNetChargeWithDutiesAndTaxes>
+                  <FreightDiscounts>
+                     <RateDiscountType>VOLUME</RateDiscountType>
+                     <Description>Base</Description>
+                     <Amount>
+                        <Currency>USD</Currency>
+                        <Amount>0.51</Amount>
+                     </Amount>
+                     <Percent>5.0</Percent>
+                  </FreightDiscounts>
+                  <FreightDiscounts>
+                     <RateDiscountType>VOLUME</RateDiscountType>
+                     <Description>Matrix</Description>
+                     <Amount>
+                        <Currency>USD</Currency>
+                        <Amount>1.03</Amount>
+                     </Amount>
+                     <Percent>10.0</Percent>
+                  </FreightDiscounts>
+                  <FreightDiscounts>
+                     <RateDiscountType>EARNED</RateDiscountType>
+                     <Description>Grace</Description>
+                     <Amount>
+                        <Currency>USD</Currency>
+                        <Amount>0.41</Amount>
+                     </Amount>
+                     <Percent>4.0</Percent>
+                  </FreightDiscounts>
+                  <Surcharges>
+                     <SurchargeType>FUEL</SurchargeType>
+                     <Level>PACKAGE</Level>
+                     <Description>SmartPost Fuel</Description>
+                     <Amount>
+                        <Currency>USD</Currency>
+                        <Amount>0.46</Amount>
+                     </Amount>
+                  </Surcharges>
+               </ShipmentRateDetail>
+               <RatedPackages>
+                  <GroupNumber>1</GroupNumber>
+                  <EffectiveNetDiscount>
+                     <Currency>USD</Currency>
+                     <Amount>9.97</Amount>
+                  </EffectiveNetDiscount>
+                  <PackageRateDetail>
+                     <RateType>PAYOR_ACCOUNT_PACKAGE</RateType>
+                     <RatedWeightMethod>ACTUAL</RatedWeightMethod>
+                     <BillingWeight>
+                        <Units>LB</Units>
+                        <Value>20.0</Value>
+                     </BillingWeight>
+                     <BaseCharge>
+                        <Currency>USD</Currency>
+                        <Amount>10.28</Amount>
+                     </BaseCharge>
+                     <TotalFreightDiscounts>
+                        <Currency>USD</Currency>
+                        <Amount>1.95</Amount>
+                     </TotalFreightDiscounts>
+                     <NetFreight>
+                        <Currency>USD</Currency>
+                        <Amount>8.33</Amount>
+                     </NetFreight>
+                     <TotalSurcharges>
+                        <Currency>USD</Currency>
+                        <Amount>0.46</Amount>
+                     </TotalSurcharges>
+                     <NetFedExCharge>
+                        <Currency>USD</Currency>
+                        <Amount>8.79</Amount>
+                     </NetFedExCharge>
+                     <TotalTaxes>
+                        <Currency>USD</Currency>
+                        <Amount>0.0</Amount>
+                     </TotalTaxes>
+                     <NetCharge>
+                        <Currency>USD</Currency>
+                        <Amount>8.79</Amount>
+                     </NetCharge>
+                     <TotalRebates>
+                        <Currency>USD</Currency>
+                        <Amount>0.0</Amount>
+                     </TotalRebates>
+                     <FreightDiscounts>
+                        <RateDiscountType>VOLUME</RateDiscountType>
+                        <Description>Base</Description>
+                        <Amount>
+                           <Currency>USD</Currency>
+                           <Amount>0.51</Amount>
+                        </Amount>
+                        <Percent>5.0</Percent>
+                     </FreightDiscounts>
+                     <FreightDiscounts>
+                        <RateDiscountType>VOLUME</RateDiscountType>
+                        <Description>Matrix</Description>
+                        <Amount>
+                           <Currency>USD</Currency>
+                           <Amount>1.03</Amount>
+                        </Amount>
+                        <Percent>10.0</Percent>
+                     </FreightDiscounts>
+                     <FreightDiscounts>
+                        <RateDiscountType>EARNED</RateDiscountType>
+                        <Description>Grace</Description>
+                        <Amount>
+                           <Currency>USD</Currency>
+                           <Amount>0.41</Amount>
+                        </Amount>
+                        <Percent>4.0</Percent>
+                     </FreightDiscounts>
+                     <Surcharges>
+                        <SurchargeType>FUEL</SurchargeType>
+                        <Level>PACKAGE</Level>
+                        <Description>SmartPost Fuel</Description>
+                        <Amount>
+                           <Currency>USD</Currency>
+                           <Amount>0.46</Amount>
+                        </Amount>
+                     </Surcharges>
+                  </PackageRateDetail>
+               </RatedPackages>
+            </RatedShipmentDetails>
+            <RatedShipmentDetails>
+               <ShipmentRateDetail>
+                  <RateType>PAYOR_LIST_PACKAGE</RateType>
+                  <RateZone>2</RateZone>
+                  <RatedWeightMethod>ACTUAL</RatedWeightMethod>
+                  <DimDivisor>0</DimDivisor>
+                  <FuelSurchargePercent>5.5</FuelSurchargePercent>
+                  <TotalBillingWeight>
+                     <Units>LB</Units>
+                     <Value>20.0</Value>
+                  </TotalBillingWeight>
+                  <TotalBaseCharge>
+                     <Currency>USD</Currency>
+                     <Amount>17.78</Amount>
+                  </TotalBaseCharge>
+                  <TotalFreightDiscounts>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalFreightDiscounts>
+                  <TotalNetFreight>
+                     <Currency>USD</Currency>
+                     <Amount>17.78</Amount>
+                  </TotalNetFreight>
+                  <TotalSurcharges>
+                     <Currency>USD</Currency>
+                     <Amount>0.98</Amount>
+                  </TotalSurcharges>
+                  <TotalNetFedExCharge>
+                     <Currency>USD</Currency>
+                     <Amount>18.76</Amount>
+                  </TotalNetFedExCharge>
+                  <TotalTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalTaxes>
+                  <TotalNetCharge>
+                     <Currency>USD</Currency>
+                     <Amount>18.76</Amount>
+                  </TotalNetCharge>
+                  <TotalRebates>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalRebates>
+                  <TotalDutiesAndTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalDutiesAndTaxes>
+                  <TotalAncillaryFeesAndTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalAncillaryFeesAndTaxes>
+                  <TotalDutiesTaxesAndFees>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalDutiesTaxesAndFees>
+                  <TotalNetChargeWithDutiesAndTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>18.76</Amount>
+                  </TotalNetChargeWithDutiesAndTaxes>
+                  <Surcharges>
+                     <SurchargeType>FUEL</SurchargeType>
+                     <Level>PACKAGE</Level>
+                     <Description>SmartPost Fuel</Description>
+                     <Amount>
+                        <Currency>USD</Currency>
+                        <Amount>0.98</Amount>
+                     </Amount>
+                  </Surcharges>
+               </ShipmentRateDetail>
+               <RatedPackages>
+                  <GroupNumber>1</GroupNumber>
+                  <PackageRateDetail>
+                     <RateType>PAYOR_LIST_PACKAGE</RateType>
+                     <RatedWeightMethod>ACTUAL</RatedWeightMethod>
+                     <BillingWeight>
+                        <Units>LB</Units>
+                        <Value>20.0</Value>
+                     </BillingWeight>
+                     <BaseCharge>
+                        <Currency>USD</Currency>
+                        <Amount>17.78</Amount>
+                     </BaseCharge>
+                     <TotalFreightDiscounts>
+                        <Currency>USD</Currency>
+                        <Amount>0.0</Amount>
+                     </TotalFreightDiscounts>
+                     <NetFreight>
+                        <Currency>USD</Currency>
+                        <Amount>17.78</Amount>
+                     </NetFreight>
+                     <TotalSurcharges>
+                        <Currency>USD</Currency>
+                        <Amount>0.98</Amount>
+                     </TotalSurcharges>
+                     <NetFedExCharge>
+                        <Currency>USD</Currency>
+                        <Amount>18.76</Amount>
+                     </NetFedExCharge>
+                     <TotalTaxes>
+                        <Currency>USD</Currency>
+                        <Amount>0.0</Amount>
+                     </TotalTaxes>
+                     <NetCharge>
+                        <Currency>USD</Currency>
+                        <Amount>18.76</Amount>
+                     </NetCharge>
+                     <TotalRebates>
+                        <Currency>USD</Currency>
+                        <Amount>0.0</Amount>
+                     </TotalRebates>
+                     <Surcharges>
+                        <SurchargeType>FUEL</SurchargeType>
+                        <Level>PACKAGE</Level>
+                        <Description>SmartPost Fuel</Description>
+                        <Amount>
+                           <Currency>USD</Currency>
+                           <Amount>0.98</Amount>
+                        </Amount>
+                     </Surcharges>
+                  </PackageRateDetail>
+               </RatedPackages>
+            </RatedShipmentDetails>
+         </RateReplyDetails>
+      </RateReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+Additional Info:
+URL:https://wsdrt.idev.fedex.com:443/web-services
+Date:Wed Jul 24 13:29:19 IST 2019
+TimeTaken:14449ms

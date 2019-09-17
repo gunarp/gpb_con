@@ -1,0 +1,449 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://fedex.com/ws/rate/v26">
+   <SOAP-ENV:Body>
+      <RateRequest>
+         <WebAuthenticationDetail>
+            <ParentCredential>
+               <Key>Input Your Information</Key>
+               <Password>Input Your Information</Password>
+            </ParentCredential>
+            <UserCredential>
+               <Key>Input Your Information</Key>
+               <Password>Input Your Information</Password>
+            </UserCredential>
+         </WebAuthenticationDetail>
+         <ClientDetail>
+            <AccountNumber>Input Your Information</AccountNumber>
+            <MeterNumber>Input Your Information</MeterNumber>
+         </ClientDetail>
+         <TransactionDetail>
+            <CustomerTransactionId>TC034_US_FEDEX_1_DAY_FREIGHT  with Your Packaging</CustomerTransactionId>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>crs</ServiceId>
+            <Major>26</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <RequestedShipment>
+            <ShipTimestamp>2019-07-24T12:34:56-06:00</ShipTimestamp>
+            <DropoffType>REGULAR_PICKUP</DropoffType>
+            <ServiceType>FEDEX_1_DAY_FREIGHT</ServiceType>
+            <PackagingType>YOUR_PACKAGING</PackagingType>
+            <TotalWeight>
+               <Units>LB</Units>
+               <Value>151.0</Value>
+            </TotalWeight>
+            <Shipper>
+               
+                <Contact>
+                  <PersonName>Input Your Information</PersonName>
+                  <CompanyName>Input Your Information</CompanyName>
+                  <PhoneNumber>Input Your Information</PhoneNumber>
+                  <EMailAddress>Input Your Information</EMailAddress>
+               </Contact>
+               <Address>
+                  <StreetLines>Input Your Information</StreetLines>
+                  <StreetLines>Input Your Information</StreetLines>
+                  <City>Input Your Information</City>
+                  <StateOrProvinceCode>Input Your Information</StateOrProvinceCode>
+                  <PostalCode>Input Your Information</PostalCode>
+                  <CountryCode>Input Your Information</CountryCode>
+               </Address>
+            </Shipper>
+            <Recipient>
+               
+                <Contact>
+                  <PersonName>Input Your Information</PersonName>
+                  <CompanyName>Input Your Information</CompanyName>
+                  <PhoneNumber>Input Your Information</PhoneNumber>
+                  <EMailAddress>Input Your Information</EMailAddress>
+               </Contact>
+               <Address>
+                  <StreetLines>Input Your Information</StreetLines>
+                  <StreetLines>Input Your Information</StreetLines>
+                  <City>Input Your Information</City>
+                  <StateOrProvinceCode>Input Your Information</StateOrProvinceCode>
+                  <PostalCode>Input Your Information</PostalCode>
+                  <CountryCode>Input Your Information</CountryCode>
+               </Address>
+            </Recipient>
+            <ShippingChargesPayment>
+               <PaymentType>SENDER</PaymentType>
+               <Payor>
+                  <ResponsibleParty>
+                     <AccountNumber>Input Your Information</AccountNumber>
+                  </ResponsibleParty>
+               </Payor>
+            </ShippingChargesPayment>
+            <RateRequestTypes>LIST</RateRequestTypes>
+            <PackageCount>1</PackageCount>
+            <RequestedPackageLineItems>
+               <SequenceNumber>1</SequenceNumber>
+               <GroupNumber>1</GroupNumber>
+               <GroupPackageCount>1</GroupPackageCount>
+               <Weight>
+                  <Units>LB</Units>
+                  <Value>151.0</Value>
+               </Weight>
+               <Dimensions>
+                  <Length>30</Length>
+                  <Width>30</Width>
+                  <Height>40</Height>
+                  <Units>IN</Units>
+               </Dimensions>
+               <ContentRecords>
+                  <PartNumber>123445</PartNumber>
+                  <ItemNumber>kjdjalsro1262739827</ItemNumber>
+                  <ReceivedQuantity>12</ReceivedQuantity>
+                  <Description>ContentDescription</Description>
+               </ContentRecords>
+            </RequestedPackageLineItems>
+         </RequestedShipment>
+      </RateRequest>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+Response:
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <RateReply xmlns="http://fedex.com/ws/rate/v26">
+         <HighestSeverity>SUCCESS</HighestSeverity>
+         <Notifications>
+            <Severity>SUCCESS</Severity>
+            <Source>crs</Source>
+            <Code>0</Code>
+            <Message>Request was successfully processed.</Message>
+            <LocalizedMessage>Request was successfully processed.</LocalizedMessage>
+         </Notifications>
+         <TransactionDetail>
+            <CustomerTransactionId>TC034_US_FEDEX_1_DAY_FREIGHT  with Your Packaging</CustomerTransactionId>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>crs</ServiceId>
+            <Major>26</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <RateReplyDetails>
+            <ServiceType>FEDEX_1_DAY_FREIGHT</ServiceType>
+            <ServiceDescription>
+               <ServiceType>FEDEX_1_DAY_FREIGHT</ServiceType>
+               <Code>70</Code>
+               <Names>
+                  <Type>long</Type>
+                  <Encoding>utf-8</Encoding>
+                  <Value>FedEx 1Day® Freight</Value>
+               </Names>
+               <Names>
+                  <Type>long</Type>
+                  <Encoding>ascii</Encoding>
+                  <Value>FedEx 1Day Freight</Value>
+               </Names>
+               <Names>
+                  <Type>medium</Type>
+                  <Encoding>utf-8</Encoding>
+                  <Value>FedEx 1Day® Freight</Value>
+               </Names>
+               <Names>
+                  <Type>medium</Type>
+                  <Encoding>ascii</Encoding>
+                  <Value>FedEx 1Day Freight</Value>
+               </Names>
+               <Names>
+                  <Type>short</Type>
+                  <Encoding>utf-8</Encoding>
+                  <Value>F-1</Value>
+               </Names>
+               <Names>
+                  <Type>short</Type>
+                  <Encoding>ascii</Encoding>
+                  <Value>F-1</Value>
+               </Names>
+               <Names>
+                  <Type>abbrv</Type>
+                  <Encoding>ascii</Encoding>
+                  <Value>F1</Value>
+               </Names>
+               <Description>1 Day Freight</Description>
+               <AstraDescription>F1</AstraDescription>
+            </ServiceDescription>
+            <PackagingType>YOUR_PACKAGING</PackagingType>
+            <DestinationAirportId>OLV</DestinationAirportId>
+            <IneligibleForMoneyBackGuarantee>false</IneligibleForMoneyBackGuarantee>
+            <OriginServiceArea>H2</OriginServiceArea>
+            <DestinationServiceArea>H1</DestinationServiceArea>
+            <SignatureOption>SERVICE_DEFAULT</SignatureOption>
+            <ActualRateType>PAYOR_ACCOUNT_PACKAGE</ActualRateType>
+            <RatedShipmentDetails>
+               <ShipmentRateDetail>
+                  <RateType>PAYOR_ACCOUNT_PACKAGE</RateType>
+                  <RateScale>2174</RateScale>
+                  <RateZone>04</RateZone>
+                  <PricingCode>HUNDREDWEIGHT</PricingCode>
+                  <RatedWeightMethod>DIM</RatedWeightMethod>
+                  <DimDivisor>139</DimDivisor>
+                  <FuelSurchargePercent>16.5</FuelSurchargePercent>
+                  <TotalBillingWeight>
+                     <Units>LB</Units>
+                     <Value>259.0</Value>
+                  </TotalBillingWeight>
+                  <TotalDimWeight>
+                     <Units>LB</Units>
+                     <Value>259.0</Value>
+                  </TotalDimWeight>
+                  <TotalBaseCharge>
+                     <Currency>USD</Currency>
+                     <Amount>1085.21</Amount>
+                  </TotalBaseCharge>
+                  <TotalFreightDiscounts>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalFreightDiscounts>
+                  <TotalNetFreight>
+                     <Currency>USD</Currency>
+                     <Amount>1085.21</Amount>
+                  </TotalNetFreight>
+                  <TotalSurcharges>
+                     <Currency>USD</Currency>
+                     <Amount>179.06</Amount>
+                  </TotalSurcharges>
+                  <TotalNetFedExCharge>
+                     <Currency>USD</Currency>
+                     <Amount>1264.27</Amount>
+                  </TotalNetFedExCharge>
+                  <TotalTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalTaxes>
+                  <TotalNetCharge>
+                     <Currency>USD</Currency>
+                     <Amount>1264.27</Amount>
+                  </TotalNetCharge>
+                  <TotalRebates>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalRebates>
+                  <TotalDutiesAndTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalDutiesAndTaxes>
+                  <TotalAncillaryFeesAndTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalAncillaryFeesAndTaxes>
+                  <TotalDutiesTaxesAndFees>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalDutiesTaxesAndFees>
+                  <TotalNetChargeWithDutiesAndTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>1264.27</Amount>
+                  </TotalNetChargeWithDutiesAndTaxes>
+                  <Surcharges>
+                     <SurchargeType>FUEL</SurchargeType>
+                     <Description>Fuel</Description>
+                     <Amount>
+                        <Currency>USD</Currency>
+                        <Amount>179.06</Amount>
+                     </Amount>
+                  </Surcharges>
+               </ShipmentRateDetail>
+               <RatedPackages>
+                  <GroupNumber>1</GroupNumber>
+                  <PackageRateDetail>
+                     <RateType>PAYOR_ACCOUNT_PACKAGE</RateType>
+                     <RatedWeightMethod>DIM</RatedWeightMethod>
+                     <BillingWeight>
+                        <Units>LB</Units>
+                        <Value>259.0</Value>
+                     </BillingWeight>
+                     <DimWeight>
+                        <Units>LB</Units>
+                        <Value>259.0</Value>
+                     </DimWeight>
+                     <BaseCharge>
+                        <Currency>USD</Currency>
+                        <Amount>1085.21</Amount>
+                     </BaseCharge>
+                     <TotalFreightDiscounts>
+                        <Currency>USD</Currency>
+                        <Amount>0.0</Amount>
+                     </TotalFreightDiscounts>
+                     <NetFreight>
+                        <Currency>USD</Currency>
+                        <Amount>1085.21</Amount>
+                     </NetFreight>
+                     <TotalSurcharges>
+                        <Currency>USD</Currency>
+                        <Amount>179.06</Amount>
+                     </TotalSurcharges>
+                     <NetFedExCharge>
+                        <Currency>USD</Currency>
+                        <Amount>1264.27</Amount>
+                     </NetFedExCharge>
+                     <TotalTaxes>
+                        <Currency>USD</Currency>
+                        <Amount>0.0</Amount>
+                     </TotalTaxes>
+                     <NetCharge>
+                        <Currency>USD</Currency>
+                        <Amount>1264.27</Amount>
+                     </NetCharge>
+                     <TotalRebates>
+                        <Currency>USD</Currency>
+                        <Amount>0.0</Amount>
+                     </TotalRebates>
+                     <Surcharges>
+                        <SurchargeType>FUEL</SurchargeType>
+                        <Description>Fuel</Description>
+                        <Amount>
+                           <Currency>USD</Currency>
+                           <Amount>179.06</Amount>
+                        </Amount>
+                     </Surcharges>
+                  </PackageRateDetail>
+               </RatedPackages>
+            </RatedShipmentDetails>
+            <RatedShipmentDetails>
+               <ShipmentRateDetail>
+                  <RateType>PAYOR_LIST_PACKAGE</RateType>
+                  <RateScale>2174</RateScale>
+                  <RateZone>04</RateZone>
+                  <PricingCode>HUNDREDWEIGHT</PricingCode>
+                  <RatedWeightMethod>DIM</RatedWeightMethod>
+                  <DimDivisor>139</DimDivisor>
+                  <FuelSurchargePercent>5.0</FuelSurchargePercent>
+                  <TotalBillingWeight>
+                     <Units>LB</Units>
+                     <Value>259.0</Value>
+                  </TotalBillingWeight>
+                  <TotalDimWeight>
+                     <Units>LB</Units>
+                     <Value>259.0</Value>
+                  </TotalDimWeight>
+                  <TotalBaseCharge>
+                     <Currency>USD</Currency>
+                     <Amount>1085.21</Amount>
+                  </TotalBaseCharge>
+                  <TotalFreightDiscounts>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalFreightDiscounts>
+                  <TotalNetFreight>
+                     <Currency>USD</Currency>
+                     <Amount>1085.21</Amount>
+                  </TotalNetFreight>
+                  <TotalSurcharges>
+                     <Currency>USD</Currency>
+                     <Amount>54.26</Amount>
+                  </TotalSurcharges>
+                  <TotalNetFedExCharge>
+                     <Currency>USD</Currency>
+                     <Amount>1139.47</Amount>
+                  </TotalNetFedExCharge>
+                  <TotalTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalTaxes>
+                  <TotalNetCharge>
+                     <Currency>USD</Currency>
+                     <Amount>1139.47</Amount>
+                  </TotalNetCharge>
+                  <TotalRebates>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalRebates>
+                  <TotalDutiesAndTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalDutiesAndTaxes>
+                  <TotalAncillaryFeesAndTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalAncillaryFeesAndTaxes>
+                  <TotalDutiesTaxesAndFees>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalDutiesTaxesAndFees>
+                  <TotalNetChargeWithDutiesAndTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>1139.47</Amount>
+                  </TotalNetChargeWithDutiesAndTaxes>
+                  <Surcharges>
+                     <SurchargeType>FUEL</SurchargeType>
+                     <Description>Fuel</Description>
+                     <Amount>
+                        <Currency>USD</Currency>
+                        <Amount>54.26</Amount>
+                     </Amount>
+                  </Surcharges>
+               </ShipmentRateDetail>
+               <RatedPackages>
+                  <GroupNumber>1</GroupNumber>
+                  <PackageRateDetail>
+                     <RateType>PAYOR_LIST_PACKAGE</RateType>
+                     <RatedWeightMethod>DIM</RatedWeightMethod>
+                     <BillingWeight>
+                        <Units>LB</Units>
+                        <Value>259.0</Value>
+                     </BillingWeight>
+                     <DimWeight>
+                        <Units>LB</Units>
+                        <Value>259.0</Value>
+                     </DimWeight>
+                     <BaseCharge>
+                        <Currency>USD</Currency>
+                        <Amount>1085.21</Amount>
+                     </BaseCharge>
+                     <TotalFreightDiscounts>
+                        <Currency>USD</Currency>
+                        <Amount>0.0</Amount>
+                     </TotalFreightDiscounts>
+                     <NetFreight>
+                        <Currency>USD</Currency>
+                        <Amount>1085.21</Amount>
+                     </NetFreight>
+                     <TotalSurcharges>
+                        <Currency>USD</Currency>
+                        <Amount>54.26</Amount>
+                     </TotalSurcharges>
+                     <NetFedExCharge>
+                        <Currency>USD</Currency>
+                        <Amount>1139.47</Amount>
+                     </NetFedExCharge>
+                     <TotalTaxes>
+                        <Currency>USD</Currency>
+                        <Amount>0.0</Amount>
+                     </TotalTaxes>
+                     <NetCharge>
+                        <Currency>USD</Currency>
+                        <Amount>1139.47</Amount>
+                     </NetCharge>
+                     <TotalRebates>
+                        <Currency>USD</Currency>
+                        <Amount>0.0</Amount>
+                     </TotalRebates>
+                     <Surcharges>
+                        <SurchargeType>FUEL</SurchargeType>
+                        <Description>Fuel</Description>
+                        <Amount>
+                           <Currency>USD</Currency>
+                           <Amount>54.26</Amount>
+                        </Amount>
+                     </Surcharges>
+                  </PackageRateDetail>
+               </RatedPackages>
+            </RatedShipmentDetails>
+         </RateReplyDetails>
+      </RateReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+Additional Info:
+URL:https://wsdrt.idev.fedex.com:443/web-services
+Date:Wed Jul 24 13:29:19 IST 2019
+TimeTaken:14449ms

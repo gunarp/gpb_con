@@ -1,3 +1,6 @@
+app.db
+migrations/*
+migrations/
 API DOCS/
 app/access/creds/*
 # Created by https://www.gitignore.io/api/flask,python,visualstudiocode

@@ -1,22 +1,29 @@
-<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+{% extends "base.html" %}
 
-<form method="POST" autocomplete="off">
-    Zipcode:
-    <input type="number" name="zipcode" value="{{ request.form['zipcode'] }}" min=10000 max=99999>
-    Weight:
-    <input type="number" name="weight" value="{{ request.form['weight'] }}" min=1>
-    Length:
-    <input type="number" name="length" value="{{ request.form['length'] }}" min=1 max=1000>
-    Width:
-    <input type="number" name="width" value="{{ request.form['width'] }}" min=1 max=1000>
-    Height:
-    <input type="number" name="height" value="{{ request.form['height'] }}" min=1 max=1000>
+{% block content %}
+<div>
+    <form method="POST" autocomplete="off">
+        Zipcode:
+        <input type="number" name="zipcode" value="{{ request.form['zipcode'] }}" min=10000 max=99999>
+        Weight:
+        <input type="number" name="weight" value="{{ request.form['weight'] }}" min=1>
+        Length:
+        <input type="number" name="length" value="{{ request.form['length'] }}" min=1 max=1000>
+        Width:
+        <input type="number" name="width" value="{{ request.form['width'] }}" min=1 max=1000>
+        Height:
+        <input type="number" name="height" value="{{ request.form['height'] }}" min=1 max=1000>
 
-    <input type="submit">
-</form>
+        <input type="submit">
+    </form>
+</div>
+
+<p><a href="{{ url_for('login') }}">Login</a></p>
 
 {% if response is not none %}
     {% for table in rates %}
         {{ table|safe }}        
     {% endfor %}
 {% endif %}
+
+{% endblock %}

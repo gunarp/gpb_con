@@ -1,0 +1,465 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://fedex.com/ws/rate/v26">
+   <SOAP-ENV:Body>
+      <RateRequest>
+         <WebAuthenticationDetail>
+            <ParentCredential>
+               <Key>Input Your Information</Key>
+               <Password>Input Your Information</Password>
+            </ParentCredential>
+            <UserCredential>
+               <Key>Input Your Information</Key>
+               <Password>Input Your Information</Password>
+            </UserCredential>
+         </WebAuthenticationDetail>
+         <ClientDetail>
+            <AccountNumber>Input Your Information</AccountNumber>
+            <MeterNumber>Input Your Information</MeterNumber>
+         </ClientDetail>
+         <TransactionDetail>
+            <CustomerTransactionId>TC038_US_GROUND_HOME_DELIVERY with Your Packaging</CustomerTransactionId>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>crs</ServiceId>
+            <Major>26</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <RequestedShipment>
+            <ShipTimestamp>2019-07-24T12:34:56-06:00</ShipTimestamp>
+            <DropoffType>REGULAR_PICKUP</DropoffType>
+            <ServiceType>GROUND_HOME_DELIVERY</ServiceType>
+            <PackagingType>YOUR_PACKAGING</PackagingType>
+            <TotalWeight>
+               <Units>LB</Units>
+               <Value>20.0</Value>
+            </TotalWeight>
+              <Shipper>
+                <Contact>
+                  <PersonName>Input Your Information</PersonName>
+                  <CompanyName>Input Your Information</CompanyName>
+                  <PhoneNumber>Input Your Information</PhoneNumber>
+                  <EMailAddress>Input Your Information</EMailAddress>
+               </Contact>
+               <Address>
+                  <StreetLines>Input Your Information</StreetLines>
+                  <StreetLines>Input Your Information</StreetLines>
+                  <City>Input Your Information</City>
+                  <StateOrProvinceCode>Input Your Information</StateOrProvinceCode>
+                  <PostalCode>Input Your Information</PostalCode>
+                  <CountryCode>Input Your Information</CountryCode>
+               </Address>
+            </Shipper>
+            <Recipient>
+               <Contact>
+                  <PersonName>Input Your Information</PersonName>
+                  <CompanyName>Input Your Information</CompanyName>
+                  <PhoneNumber>Input Your Information</PhoneNumber>
+                  <EMailAddress>Input Your Information</EMailAddress>
+               </Contact>
+               <Address>
+                  <StreetLines>Input Your Information</StreetLines>
+                  <StreetLines>Input Your Information</StreetLines>
+                  <City>Input Your Information</City>
+                  <StateOrProvinceCode>Input Your Information</StateOrProvinceCode>
+                  <PostalCode>Input Your Information</PostalCode>
+                  <CountryCode>Input Your Information</CountryCode>
+               </Address>
+            </Recipient>
+            <ShippingChargesPayment>
+               <PaymentType>SENDER</PaymentType>
+               <Payor>
+                  <ResponsibleParty>
+                     <AccountNumber>Input Your Information</AccountNumber>
+                  </ResponsibleParty>
+               </Payor>
+            </ShippingChargesPayment>
+            <RateRequestTypes>LIST</RateRequestTypes>
+            <PackageCount>1</PackageCount>
+            <RequestedPackageLineItems>
+               <SequenceNumber>1</SequenceNumber>
+               <GroupNumber>1</GroupNumber>
+               <GroupPackageCount>1</GroupPackageCount>
+               <Weight>
+                  <Units>LB</Units>
+                  <Value>20.0</Value>
+               </Weight>
+               <Dimensions>
+                  <Length>12</Length>
+                  <Width>12</Width>
+                  <Height>12</Height>
+                  <Units>IN</Units>
+               </Dimensions>
+               <ContentRecords>
+                  <PartNumber>123445</PartNumber>
+                  <ItemNumber>kjdjalsro1262739827</ItemNumber>
+                  <ReceivedQuantity>12</ReceivedQuantity>
+                  <Description>ContentDescription</Description>
+               </ContentRecords>
+            </RequestedPackageLineItems>
+         </RequestedShipment>
+      </RateRequest>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+Response:
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <RateReply xmlns="http://fedex.com/ws/rate/v26">
+         <HighestSeverity>SUCCESS</HighestSeverity>
+         <Notifications>
+            <Severity>SUCCESS</Severity>
+            <Source>crs</Source>
+            <Code>0</Code>
+            <Message>Request was successfully processed.</Message>
+            <LocalizedMessage>Request was successfully processed.</LocalizedMessage>
+         </Notifications>
+         <TransactionDetail>
+            <CustomerTransactionId>TC038_US_GROUND_HOME_DELIVERY with Your Packaging</CustomerTransactionId>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>crs</ServiceId>
+            <Major>26</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <RateReplyDetails>
+            <ServiceType>GROUND_HOME_DELIVERY</ServiceType>
+            <ServiceDescription>
+               <ServiceType>GROUND_HOME_DELIVERY</ServiceType>
+               <Code>90</Code>
+               <Names>
+                  <Type>long</Type>
+                  <Encoding>utf-8</Encoding>
+                  <Value>FedEx Home Delivery®</Value>
+               </Names>
+               <Names>
+                  <Type>long</Type>
+                  <Encoding>ascii</Encoding>
+                  <Value>FedEx Home Delivery</Value>
+               </Names>
+               <Names>
+                  <Type>medium</Type>
+                  <Encoding>utf-8</Encoding>
+                  <Value>Home Delivery®</Value>
+               </Names>
+               <Names>
+                  <Type>medium</Type>
+                  <Encoding>ascii</Encoding>
+                  <Value>Home Delivery</Value>
+               </Names>
+               <Names>
+                  <Type>short</Type>
+                  <Encoding>utf-8</Encoding>
+                  <Value>HD</Value>
+               </Names>
+               <Names>
+                  <Type>short</Type>
+                  <Encoding>ascii</Encoding>
+                  <Value>HD</Value>
+               </Names>
+               <Names>
+                  <Type>abbrv</Type>
+                  <Encoding>ascii</Encoding>
+                  <Value>QH</Value>
+               </Names>
+               <Description>FedEx Home Delivery</Description>
+               <AstraDescription>FXH</AstraDescription>
+            </ServiceDescription>
+            <PackagingType>YOUR_PACKAGING</PackagingType>
+            <DestinationAirportId>MEM</DestinationAirportId>
+            <IneligibleForMoneyBackGuarantee>false</IneligibleForMoneyBackGuarantee>
+            <SignatureOption>SERVICE_DEFAULT</SignatureOption>
+            <ActualRateType>PAYOR_ACCOUNT_PACKAGE</ActualRateType>
+            <RatedShipmentDetails>
+               <ShipmentRateDetail>
+                  <RateType>PAYOR_ACCOUNT_PACKAGE</RateType>
+                  <RateZone>4</RateZone>
+                  <RatedWeightMethod>ACTUAL</RatedWeightMethod>
+                  <DimDivisor>0</DimDivisor>
+                  <FuelSurchargePercent>6.5</FuelSurchargePercent>
+                  <TotalBillingWeight>
+                     <Units>LB</Units>
+                     <Value>20.0</Value>
+                  </TotalBillingWeight>
+                  <TotalBaseCharge>
+                     <Currency>USD</Currency>
+                     <Amount>15.06</Amount>
+                  </TotalBaseCharge>
+                  <TotalFreightDiscounts>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalFreightDiscounts>
+                  <TotalNetFreight>
+                     <Currency>USD</Currency>
+                     <Amount>15.06</Amount>
+                  </TotalNetFreight>
+                  <TotalSurcharges>
+                     <Currency>USD</Currency>
+                     <Amount>5.03</Amount>
+                  </TotalSurcharges>
+                  <TotalNetFedExCharge>
+                     <Currency>USD</Currency>
+                     <Amount>20.09</Amount>
+                  </TotalNetFedExCharge>
+                  <TotalTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalTaxes>
+                  <TotalNetCharge>
+                     <Currency>USD</Currency>
+                     <Amount>20.09</Amount>
+                  </TotalNetCharge>
+                  <TotalRebates>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalRebates>
+                  <TotalDutiesAndTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalDutiesAndTaxes>
+                  <TotalAncillaryFeesAndTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalAncillaryFeesAndTaxes>
+                  <TotalDutiesTaxesAndFees>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalDutiesTaxesAndFees>
+                  <TotalNetChargeWithDutiesAndTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>20.09</Amount>
+                  </TotalNetChargeWithDutiesAndTaxes>
+                  <Surcharges>
+                     <SurchargeType>RESIDENTIAL_DELIVERY</SurchargeType>
+                     <Level>PACKAGE</Level>
+                     <Description>FedEx Home Delivery Urban/Rural Charge</Description>
+                     <Amount>
+                        <Currency>USD</Currency>
+                        <Amount>3.8</Amount>
+                     </Amount>
+                  </Surcharges>
+                  <Surcharges>
+                     <SurchargeType>FUEL</SurchargeType>
+                     <Level>PACKAGE</Level>
+                     <Description>FedEx Ground Fuel</Description>
+                     <Amount>
+                        <Currency>USD</Currency>
+                        <Amount>1.23</Amount>
+                     </Amount>
+                  </Surcharges>
+               </ShipmentRateDetail>
+               <RatedPackages>
+                  <GroupNumber>1</GroupNumber>
+                  <PackageRateDetail>
+                     <RateType>PAYOR_ACCOUNT_PACKAGE</RateType>
+                     <RatedWeightMethod>ACTUAL</RatedWeightMethod>
+                     <BillingWeight>
+                        <Units>LB</Units>
+                        <Value>20.0</Value>
+                     </BillingWeight>
+                     <BaseCharge>
+                        <Currency>USD</Currency>
+                        <Amount>15.06</Amount>
+                     </BaseCharge>
+                     <TotalFreightDiscounts>
+                        <Currency>USD</Currency>
+                        <Amount>0.0</Amount>
+                     </TotalFreightDiscounts>
+                     <NetFreight>
+                        <Currency>USD</Currency>
+                        <Amount>15.06</Amount>
+                     </NetFreight>
+                     <TotalSurcharges>
+                        <Currency>USD</Currency>
+                        <Amount>5.03</Amount>
+                     </TotalSurcharges>
+                     <NetFedExCharge>
+                        <Currency>USD</Currency>
+                        <Amount>20.09</Amount>
+                     </NetFedExCharge>
+                     <TotalTaxes>
+                        <Currency>USD</Currency>
+                        <Amount>0.0</Amount>
+                     </TotalTaxes>
+                     <NetCharge>
+                        <Currency>USD</Currency>
+                        <Amount>20.09</Amount>
+                     </NetCharge>
+                     <TotalRebates>
+                        <Currency>USD</Currency>
+                        <Amount>0.0</Amount>
+                     </TotalRebates>
+                     <Surcharges>
+                        <SurchargeType>RESIDENTIAL_DELIVERY</SurchargeType>
+                        <Level>PACKAGE</Level>
+                        <Description>FedEx Home Delivery Urban/Rural Charge</Description>
+                        <Amount>
+                           <Currency>USD</Currency>
+                           <Amount>3.8</Amount>
+                        </Amount>
+                     </Surcharges>
+                     <Surcharges>
+                        <SurchargeType>FUEL</SurchargeType>
+                        <Level>PACKAGE</Level>
+                        <Description>FedEx Ground Fuel</Description>
+                        <Amount>
+                           <Currency>USD</Currency>
+                           <Amount>1.23</Amount>
+                        </Amount>
+                     </Surcharges>
+                  </PackageRateDetail>
+               </RatedPackages>
+            </RatedShipmentDetails>
+            <RatedShipmentDetails>
+               <ShipmentRateDetail>
+                  <RateType>PAYOR_LIST_PACKAGE</RateType>
+                  <RateZone>4</RateZone>
+                  <RatedWeightMethod>ACTUAL</RatedWeightMethod>
+                  <DimDivisor>0</DimDivisor>
+                  <FuelSurchargePercent>5.5</FuelSurchargePercent>
+                  <TotalBillingWeight>
+                     <Units>LB</Units>
+                     <Value>20.0</Value>
+                  </TotalBillingWeight>
+                  <TotalBaseCharge>
+                     <Currency>USD</Currency>
+                     <Amount>15.06</Amount>
+                  </TotalBaseCharge>
+                  <TotalFreightDiscounts>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalFreightDiscounts>
+                  <TotalNetFreight>
+                     <Currency>USD</Currency>
+                     <Amount>15.06</Amount>
+                  </TotalNetFreight>
+                  <TotalSurcharges>
+                     <Currency>USD</Currency>
+                     <Amount>4.84</Amount>
+                  </TotalSurcharges>
+                  <TotalNetFedExCharge>
+                     <Currency>USD</Currency>
+                     <Amount>19.9</Amount>
+                  </TotalNetFedExCharge>
+                  <TotalTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalTaxes>
+                  <TotalNetCharge>
+                     <Currency>USD</Currency>
+                     <Amount>19.9</Amount>
+                  </TotalNetCharge>
+                  <TotalRebates>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalRebates>
+                  <TotalDutiesAndTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalDutiesAndTaxes>
+                  <TotalAncillaryFeesAndTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalAncillaryFeesAndTaxes>
+                  <TotalDutiesTaxesAndFees>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalDutiesTaxesAndFees>
+                  <TotalNetChargeWithDutiesAndTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>19.9</Amount>
+                  </TotalNetChargeWithDutiesAndTaxes>
+                  <Surcharges>
+                     <SurchargeType>RESIDENTIAL_DELIVERY</SurchargeType>
+                     <Level>PACKAGE</Level>
+                     <Description>FedEx Home Delivery Urban/Rural Charge</Description>
+                     <Amount>
+                        <Currency>USD</Currency>
+                        <Amount>3.8</Amount>
+                     </Amount>
+                  </Surcharges>
+                  <Surcharges>
+                     <SurchargeType>FUEL</SurchargeType>
+                     <Level>PACKAGE</Level>
+                     <Description>FedEx Ground Fuel</Description>
+                     <Amount>
+                        <Currency>USD</Currency>
+                        <Amount>1.04</Amount>
+                     </Amount>
+                  </Surcharges>
+               </ShipmentRateDetail>
+               <RatedPackages>
+                  <GroupNumber>1</GroupNumber>
+                  <PackageRateDetail>
+                     <RateType>PAYOR_LIST_PACKAGE</RateType>
+                     <RatedWeightMethod>ACTUAL</RatedWeightMethod>
+                     <BillingWeight>
+                        <Units>LB</Units>
+                        <Value>20.0</Value>
+                     </BillingWeight>
+                     <BaseCharge>
+                        <Currency>USD</Currency>
+                        <Amount>15.06</Amount>
+                     </BaseCharge>
+                     <TotalFreightDiscounts>
+                        <Currency>USD</Currency>
+                        <Amount>0.0</Amount>
+                     </TotalFreightDiscounts>
+                     <NetFreight>
+                        <Currency>USD</Currency>
+                        <Amount>15.06</Amount>
+                     </NetFreight>
+                     <TotalSurcharges>
+                        <Currency>USD</Currency>
+                        <Amount>4.84</Amount>
+                     </TotalSurcharges>
+                     <NetFedExCharge>
+                        <Currency>USD</Currency>
+                        <Amount>19.9</Amount>
+                     </NetFedExCharge>
+                     <TotalTaxes>
+                        <Currency>USD</Currency>
+                        <Amount>0.0</Amount>
+                     </TotalTaxes>
+                     <NetCharge>
+                        <Currency>USD</Currency>
+                        <Amount>19.9</Amount>
+                     </NetCharge>
+                     <TotalRebates>
+                        <Currency>USD</Currency>
+                        <Amount>0.0</Amount>
+                     </TotalRebates>
+                     <Surcharges>
+                        <SurchargeType>RESIDENTIAL_DELIVERY</SurchargeType>
+                        <Level>PACKAGE</Level>
+                        <Description>FedEx Home Delivery Urban/Rural Charge</Description>
+                        <Amount>
+                           <Currency>USD</Currency>
+                           <Amount>3.8</Amount>
+                        </Amount>
+                     </Surcharges>
+                     <Surcharges>
+                        <SurchargeType>FUEL</SurchargeType>
+                        <Level>PACKAGE</Level>
+                        <Description>FedEx Ground Fuel</Description>
+                        <Amount>
+                           <Currency>USD</Currency>
+                           <Amount>1.04</Amount>
+                        </Amount>
+                     </Surcharges>
+                  </PackageRateDetail>
+               </RatedPackages>
+            </RatedShipmentDetails>
+         </RateReplyDetails>
+      </RateReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+Additional Info:
+URL:https://wsdrt.idev.fedex.com:443/web-services
+Date:Wed Jul 24 13:29:19 IST 2019
+TimeTaken:14449ms

@@ -10,9 +10,9 @@ def get_rates(params, service_code):
     # client = Client('SCHEMA-WSDLs/RateWS.wsdl', settings=settings)
 
     # Get login info
-    with open('app/access/creds/ups.json', 'r') as f:
+    with open('app/access/creds/creds.json', 'r') as f:
     # with open('../creds/ups.json') as f:
-        credentials = json.load(f)['credentials']
+        credentials = json.load(f)['ups']
 
     # Get dimensions and location
     zipcode, weight, length, width, height = params
@@ -119,6 +119,7 @@ def get_rates(params, service_code):
     except Fault as error:
         print(ET.tostring(error.detail))
 
+# For testing the script
 if __name__ == "__main__":
     d = [98008, 1, 1, 1, 1]
     rates = get_rates(d, "59")

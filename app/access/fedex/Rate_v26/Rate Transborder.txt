@@ -1,0 +1,157 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://fedex.com/ws/rate/v26">
+   <SOAP-ENV:Body>
+      <RateRequest>
+         <WebAuthenticationDetail>
+            <ParentCredential>
+               <Key>Input Your Information</Key>
+               <Password>Input Your Information</Password>
+            </ParentCredential>
+            <UserCredential>
+               <Key>Input Your Information</Key>
+               <Password>Input Your Information</Password>
+            </UserCredential>
+         </WebAuthenticationDetail>
+         <ClientDetail>
+            <AccountNumber>Input Your Information</AccountNumber>
+            <MeterNumber>Input Your Information</MeterNumber>
+         </ClientDetail>
+         <TransactionDetail>
+            <CustomerTransactionId>TC251_International Express With RETURN_SHIPMENT</CustomerTransactionId>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>crs</ServiceId>
+            <Major>26</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <ReturnTransitAndCommit>false</ReturnTransitAndCommit>
+         <CarrierCodes>FDXG</CarrierCodes>
+         <ConsolidationKey>
+            <Type>TRANSBORDER_DISTRIBUTION</Type>
+            <Index>Radz2365</Index>
+            <Date>2018-07-23</Date>
+         </ConsolidationKey>
+         <RequestedShipment>
+            <ShipTimestamp>2019-07-24T12:34:56-06:00</ShipTimestamp>
+            <DropoffType>REGULAR_PICKUP</DropoffType>
+            <ServiceType>FEDEX_GROUND</ServiceType>
+            <PackagingType>YOUR_PACKAGING</PackagingType>
+            <TotalWeight>
+               <Units>LB</Units>
+               <Value>10</Value>
+            </TotalWeight>
+            <TotalInsuredValue>
+               <Currency>USD</Currency>
+               <Amount>5.00</Amount>
+            </TotalInsuredValue>
+            <PreferredCurrency>USD</PreferredCurrency>
+              <Shipper>
+			   <AccountNumber>Input Your Information</AccountNumber>
+                <Contact>
+                  <PersonName>Input Your Information</PersonName>
+                  <CompanyName>Input Your Information</CompanyName>
+                  <PhoneNumber>Input Your Information</PhoneNumber>
+                  <EMailAddress>Input Your Information</EMailAddress>
+               </Contact>
+               <Address>
+                  <StreetLines>Input Your Information</StreetLines>
+                  <StreetLines>Input Your Information</StreetLines>
+                  <City>Input Your Information</City>
+                  <StateOrProvinceCode>Input Your Information</StateOrProvinceCode>
+                  <PostalCode>Input Your Information</PostalCode>
+                  <CountryCode>Input Your Information</CountryCode>
+               </Address>
+            </Shipper>
+            <Recipient>
+			 <AccountNumber>Input Your Information</AccountNumber>
+               <Contact>
+                  <PersonName>Input Your Information</PersonName>
+                  <CompanyName>Input Your Information</CompanyName>
+                  <PhoneNumber>Input Your Information</PhoneNumber>
+                  <EMailAddress>Input Your Information</EMailAddress>
+               </Contact>
+               <Address>
+                  <StreetLines>Input Your Information</StreetLines>
+                  <StreetLines>Input Your Information</StreetLines>
+                  <City>Input Your Information</City>
+                  <StateOrProvinceCode>Input Your Information</StateOrProvinceCode>
+                  <PostalCode>Input Your Information</PostalCode>
+                  <CountryCode>Input Your Information</CountryCode>
+               </Address>
+            </Recipient>
+            <ShippingChargesPayment>
+               <PaymentType>SENDER</PaymentType>
+               <Payor>
+                  <ResponsibleParty>
+                    <AccountNumber>Input Your Information</AccountNumber>
+                <Contact>
+                  <PersonName>Input Your Information</PersonName>
+                  <CompanyName>Input Your Information</CompanyName>
+                  <PhoneNumber>Input Your Information</PhoneNumber>
+                  <EMailAddress>Input Your Information</EMailAddress>
+               </Contact>
+               <Address>
+                  <StreetLines>Input Your Information</StreetLines>
+                  <StreetLines>Input Your Information</StreetLines>
+                  <City>Input Your Information</City>
+                  <StateOrProvinceCode>Input Your Information</StateOrProvinceCode>
+                  <PostalCode>Input Your Information</PostalCode>
+                  <CountryCode>Input Your Information</CountryCode>
+               </Address>
+                  </ResponsibleParty>
+               </Payor>
+            </ShippingChargesPayment>
+            <RateRequestTypes>LIST</RateRequestTypes>
+            <PackageCount>45</PackageCount>
+            <RequestedPackageLineItems>
+               <SequenceNumber>1</SequenceNumber>
+               <GroupPackageCount>4</GroupPackageCount>
+               <Weight>
+                  <Units>LB</Units>
+                  <Value>10</Value>
+               </Weight>
+               <Dimensions>
+                  <Length>12</Length>
+                  <Width>12</Width>
+                  <Height>12</Height>
+                  <Units>IN</Units>
+               </Dimensions>
+            </RequestedPackageLineItems>
+         </RequestedShipment>
+      </RateRequest>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+Response:
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <RateReply xmlns="http://fedex.com/ws/rate/v26">
+         <HighestSeverity>ERROR</HighestSeverity>
+         <Notifications>
+            <Severity>ERROR</Severity>
+            <Source>crs</Source>
+            <Code>677</Code>
+            <Message>Consolidation record was not found.</Message>
+            <LocalizedMessage>Consolidation record was not found.</LocalizedMessage>
+         </Notifications>
+         <TransactionDetail>
+            <CustomerTransactionId>TC251_International Express With RETURN_SHIPMENT</CustomerTransactionId>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>crs</ServiceId>
+            <Major>26</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+      </RateReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+Additional Info:
+URL:https://wsdrt.idev.fedex.com:443/web-services
+Date:Wed Jul 24 13:29:19 IST 2019
+TimeTaken:14449ms
