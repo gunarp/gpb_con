@@ -1,10 +1,4 @@
-{% extends "base.html" %}
-
-{% block content %}
-
-{% for message in get_flashed_messages() %}
-    {{ message }}
-{% endfor %}
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 
 <form method="POST" autocomplete="off">
     Zipcode:
@@ -17,17 +11,6 @@
     <input type="number" name="width" value="{{ request.form['width'] }}" min=1 max=1000>
     Height:
     <input type="number" name="height" value="{{ request.form['height'] }}" min=1 max=1000>
-    Submit!
+
     <input type="submit">
-    </form>
-</div>
-
-<p><a href="{{ url_for('login') }}">Login</a></p>
-
-{% if response is not none %}
-    {% for table in rates %}
-        {{ table|safe }}        
-    {% endfor %}
-{% endif %}
-
-{% endblock %}
+</form>

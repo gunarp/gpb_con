@@ -16,6 +16,11 @@ def ups_rates(params):
                                   "Our Rate", "Published Rate"])
     for service_code in ups_dom:
         rate_info = get_rates(params, ups_dom[service_code])
+        # If something bad happens to the request, stop
+
+        if not isinstance(rate_info, list):
+            return rate_info
+        
         rates.loc[service_code] = \
             pd.Series({'Service':service_code, 'Billable Weight': rate_info[0],
                        'Our Rate': rate_info[1], 'Published Rate': rate_info[2]})
