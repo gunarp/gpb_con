@@ -1,0 +1,2696 @@
+{
+    'HighestSeverity': 'NOTE',
+    'Notifications': [
+        {
+            'Severity': 'NOTE',
+            'Source': 'crs',
+            'Code': '819',
+            'Message': 'The origin state/province code has been changed.  ',
+            'LocalizedMessage': 'The origin state/province code has been changed.  ',
+            'MessageParameters': []
+        },
+        {
+            'Severity': 'NOTE',
+            'Source': 'crs',
+            'Code': '820',
+            'Message': 'The destination state/province code has been changed.  ',
+            'LocalizedMessage': 'The destination state/province code has been changed.  ',
+            'MessageParameters': []
+        }
+    ],
+    'TransactionDetail': None,
+    'Version': {
+        'ServiceId': 'crs',
+        'Major': 26,
+        'Intermediate': 0,
+        'Minor': 0
+    },
+    'RateReplyDetails': [
+        {
+            'ServiceType': 'FIRST_OVERNIGHT',
+            'ServiceDescription': {
+                'ServiceType': 'FIRST_OVERNIGHT',
+                'Code': '06',
+                'Names': [
+                    {
+                        'Type': 'long',
+                        'Encoding': 'utf-8',
+                        'Value': 'FedEx First Overnight®'
+                    },
+                    {
+                        'Type': 'long',
+                        'Encoding': 'ascii',
+                        'Value': 'FedEx First Overnight'
+                    },
+                    {
+                        'Type': 'medium',
+                        'Encoding': 'utf-8',
+                        'Value': 'FedEx First Overnight®'
+                    },
+                    {
+                        'Type': 'medium',
+                        'Encoding': 'ascii',
+                        'Value': 'FedEx First Overnight'
+                    },
+                    {
+                        'Type': 'short',
+                        'Encoding': 'utf-8',
+                        'Value': 'FO'
+                    },
+                    {
+                        'Type': 'short',
+                        'Encoding': 'ascii',
+                        'Value': 'FO'
+                    },
+                    {
+                        'Type': 'abbrv',
+                        'Encoding': 'ascii',
+                        'Value': 'FO'
+                    }
+                ],
+                'Description': 'First Overnight',
+                'AstraDescription': '1ST OVR'
+            },
+            'PackagingType': 'YOUR_PACKAGING',
+            'AppliedOptions': [],
+            'AppliedSubOptions': None,
+            'DeliveryStation': None,
+            'DeliveryDayOfWeek': None,
+            'DeliveryTimestamp': None,
+            'CommitDetails': [],
+            'DestinationAirportId': 'SEA',
+            'IneligibleForMoneyBackGuarantee': False,
+            'OriginServiceArea': 'A2',
+            'DestinationServiceArea': 'A2',
+            'TransitTime': None,
+            'MaximumTransitTime': None,
+            'SignatureOption': 'SERVICE_DEFAULT',
+            'ActualRateType': 'PAYOR_ACCOUNT_PACKAGE',
+            'RatedShipmentDetails': [
+                {
+                    'EffectiveNetDiscount': {
+                        'Currency': 'USD',
+                        'Amount': Decimal('0.0')
+                    },
+                    'AdjustedCodCollectionAmount': None,
+                    'ShipmentRateDetail': {
+                        'RateType': 'PAYOR_ACCOUNT_PACKAGE',
+                        'RateScale': '6',
+                        'RateZone': '02',
+                        'PricingCode': 'PACKAGE',
+                        'RatedWeightMethod': 'ACTUAL',
+                        'MinimumChargeType': None,
+                        'CurrencyExchangeRate': None,
+                        'SpecialRatingApplied': [],
+                        'DimDivisor': 194,
+                        'DimDivisorType': None,
+                        'FuelSurchargePercent': Decimal('7.5'),
+                        'TotalBillingWeight': {
+                            'Units': 'LB',
+                            'Value': Decimal('1.0')
+                        },
+                        'TotalDimWeight': None,
+                        'TotalBaseCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('59.18')
+                        },
+                        'TotalFreightDiscounts': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetFreight': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('59.18')
+                        },
+                        'TotalSurcharges': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('4.44')
+                        },
+                        'TotalNetFedExCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('63.62')
+                        },
+                        'TotalTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('63.62')
+                        },
+                        'TotalRebates': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalDutiesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalAncillaryFeesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalDutiesTaxesAndFees': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetChargeWithDutiesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('63.62')
+                        },
+                        'ShipmentLegRateDetails': [],
+                        'FreightRateDetail': None,
+                        'FreightDiscounts': [],
+                        'Rebates': [],
+                        'Surcharges': [
+                            {
+                                'SurchargeType': 'FUEL',
+                                'Level': None,
+                                'Description': 'Fuel',
+                                'Amount': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('4.44')
+                                }
+                            }
+                        ],
+                        'Taxes': [],
+                        'DutiesAndTaxes': [],
+                        'AncillaryFeesAndTaxes': [],
+                        'VariableHandlingCharges': None,
+                        'TotalVariableHandlingCharges': None
+                    },
+                    'RatedPackages': [
+                        {
+                            'TrackingIds': [],
+                            'GroupNumber': 1,
+                            'EffectiveNetDiscount': {
+                                'Currency': 'USD',
+                                'Amount': Decimal('0.0')
+                            },
+                            'AdjustedCodCollectionAmount': None,
+                            'OversizeClass': None,
+                            'PackageRateDetail': {
+                                'RateType': 'PAYOR_ACCOUNT_PACKAGE',
+                                'RatedWeightMethod': 'ACTUAL',
+                                'MinimumChargeType': None,
+                                'BillingWeight': {
+                                    'Units': 'LB',
+                                    'Value': Decimal('1.0')
+                                },
+                                'DimWeight': None,
+                                'OversizeWeight': None,
+                                'BaseCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('59.18')
+                                },
+                                'TotalFreightDiscounts': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'NetFreight': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('59.18')
+                                },
+                                'TotalSurcharges': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('4.44')
+                                },
+                                'NetFedExCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('63.62')
+                                },
+                                'TotalTaxes': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'NetCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('63.62')
+                                },
+                                'TotalRebates': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'FreightDiscounts': [],
+                                'Rebates': [],
+                                'Surcharges': [
+                                    {
+                                        'SurchargeType': 'FUEL',
+                                        'Level': None,
+                                        'Description': 'Fuel',
+                                        'Amount': {
+                                            'Currency': 'USD',
+                                            'Amount': Decimal('4.44')
+                                        }
+                                    }
+                                ],
+                                'Taxes': [],
+                                'VariableHandlingCharges': None
+                            }
+                        }
+                    ]
+                },
+                {
+                    'EffectiveNetDiscount': None,
+                    'AdjustedCodCollectionAmount': None,
+                    'ShipmentRateDetail': {
+                        'RateType': 'PAYOR_LIST_PACKAGE',
+                        'RateScale': '6',
+                        'RateZone': '02',
+                        'PricingCode': 'PACKAGE',
+                        'RatedWeightMethod': 'ACTUAL',
+                        'MinimumChargeType': None,
+                        'CurrencyExchangeRate': None,
+                        'SpecialRatingApplied': [],
+                        'DimDivisor': 139,
+                        'DimDivisorType': None,
+                        'FuelSurchargePercent': Decimal('7.5'),
+                        'TotalBillingWeight': {
+                            'Units': 'LB',
+                            'Value': Decimal('1.0')
+                        },
+                        'TotalDimWeight': None,
+                        'TotalBaseCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('59.18')
+                        },
+                        'TotalFreightDiscounts': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetFreight': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('59.18')
+                        },
+                        'TotalSurcharges': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('4.44')
+                        },
+                        'TotalNetFedExCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('63.62')
+                        },
+                        'TotalTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('63.62')
+                        },
+                        'TotalRebates': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalDutiesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalAncillaryFeesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalDutiesTaxesAndFees': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetChargeWithDutiesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('63.62')
+                        },
+                        'ShipmentLegRateDetails': [],
+                        'FreightRateDetail': None,
+                        'FreightDiscounts': [],
+                        'Rebates': [],
+                        'Surcharges': [
+                            {
+                                'SurchargeType': 'FUEL',
+                                'Level': None,
+                                'Description': 'Fuel',
+                                'Amount': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('4.44')
+                                }
+                            }
+                        ],
+                        'Taxes': [],
+                        'DutiesAndTaxes': [],
+                        'AncillaryFeesAndTaxes': [],
+                        'VariableHandlingCharges': None,
+                        'TotalVariableHandlingCharges': None
+                    },
+                    'RatedPackages': [
+                        {
+                            'TrackingIds': [],
+                            'GroupNumber': 1,
+                            'EffectiveNetDiscount': None,
+                            'AdjustedCodCollectionAmount': None,
+                            'OversizeClass': None,
+                            'PackageRateDetail': {
+                                'RateType': 'PAYOR_LIST_PACKAGE',
+                                'RatedWeightMethod': 'ACTUAL',
+                                'MinimumChargeType': None,
+                                'BillingWeight': {
+                                    'Units': 'LB',
+                                    'Value': Decimal('1.0')
+                                },
+                                'DimWeight': None,
+                                'OversizeWeight': None,
+                                'BaseCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('59.18')
+                                },
+                                'TotalFreightDiscounts': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'NetFreight': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('59.18')
+                                },
+                                'TotalSurcharges': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('4.44')
+                                },
+                                'NetFedExCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('63.62')
+                                },
+                                'TotalTaxes': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'NetCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('63.62')
+                                },
+                                'TotalRebates': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'FreightDiscounts': [],
+                                'Rebates': [],
+                                'Surcharges': [
+                                    {
+                                        'SurchargeType': 'FUEL',
+                                        'Level': None,
+                                        'Description': 'Fuel',
+                                        'Amount': {
+                                            'Currency': 'USD',
+                                            'Amount': Decimal('4.44')
+                                        }
+                                    }
+                                ],
+                                'Taxes': [],
+                                'VariableHandlingCharges': None
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            'ServiceType': 'PRIORITY_OVERNIGHT',
+            'ServiceDescription': {
+                'ServiceType': 'PRIORITY_OVERNIGHT',
+                'Code': '01',
+                'Names': [
+                    {
+                        'Type': 'long',
+                        'Encoding': 'utf-8',
+                        'Value': 'FedEx Priority Overnight®'
+                    },
+                    {
+                        'Type': 'long',
+                        'Encoding': 'ascii',
+                        'Value': 'FedEx Priority Overnight'
+                    },
+                    {
+                        'Type': 'medium',
+                        'Encoding': 'utf-8',
+                        'Value': 'FedEx Priority Overnight®'
+                    },
+                    {
+                        'Type': 'medium',
+                        'Encoding': 'ascii',
+                        'Value': 'FedEx Priority Overnight'
+                    },
+                    {
+                        'Type': 'short',
+                        'Encoding': 'utf-8',
+                        'Value': 'P-1'
+                    },
+                    {
+                        'Type': 'short',
+                        'Encoding': 'ascii',
+                        'Value': 'P-1'
+                    },
+                    {
+                        'Type': 'abbrv',
+                        'Encoding': 'ascii',
+                        'Value': 'PO'
+                    }
+                ],
+                'Description': 'Priority Overnight',
+                'AstraDescription': 'P1'
+            },
+            'PackagingType': 'YOUR_PACKAGING',
+            'AppliedOptions': [],
+            'AppliedSubOptions': None,
+            'DeliveryStation': None,
+            'DeliveryDayOfWeek': None,
+            'DeliveryTimestamp': None,
+            'CommitDetails': [],
+            'DestinationAirportId': 'SEA',
+            'IneligibleForMoneyBackGuarantee': False,
+            'OriginServiceArea': 'A2',
+            'DestinationServiceArea': 'A2',
+            'TransitTime': None,
+            'MaximumTransitTime': None,
+            'SignatureOption': 'SERVICE_DEFAULT',
+            'ActualRateType': 'PAYOR_ACCOUNT_PACKAGE',
+            'RatedShipmentDetails': [
+                {
+                    'EffectiveNetDiscount': {
+                        'Currency': 'USD',
+                        'Amount': Decimal('6.11')
+                    },
+                    'AdjustedCodCollectionAmount': None,
+                    'ShipmentRateDetail': {
+                        'RateType': 'PAYOR_ACCOUNT_PACKAGE',
+                        'RateScale': '1',
+                        'RateZone': None,
+                        'PricingCode': 'PACKAGE',
+                        'RatedWeightMethod': 'ACTUAL',
+                        'MinimumChargeType': None,
+                        'CurrencyExchangeRate': None,
+                        'SpecialRatingApplied': [],
+                        'DimDivisor': 194,
+                        'DimDivisorType': None,
+                        'FuelSurchargePercent': Decimal('7.5'),
+                        'TotalBillingWeight': {
+                            'Units': 'LB',
+                            'Value': Decimal('1.0')
+                        },
+                        'TotalDimWeight': None,
+                        'TotalBaseCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('23.5')
+                        },
+                        'TotalFreightDiscounts': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetFreight': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('23.5')
+                        },
+                        'TotalSurcharges': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('1.76')
+                        },
+                        'TotalNetFedExCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('25.26')
+                        },
+                        'TotalTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('25.26')
+                        },
+                        'TotalRebates': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalDutiesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalAncillaryFeesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalDutiesTaxesAndFees': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetChargeWithDutiesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('25.26')
+                        },
+                        'ShipmentLegRateDetails': [],
+                        'FreightRateDetail': None,
+                        'FreightDiscounts': [],
+                        'Rebates': [],
+                        'Surcharges': [
+                            {
+                                'SurchargeType': 'FUEL',
+                                'Level': None,
+                                'Description': 'Fuel',
+                                'Amount': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('1.76')
+                                }
+                            }
+                        ],
+                        'Taxes': [],
+                        'DutiesAndTaxes': [],
+                        'AncillaryFeesAndTaxes': [],
+                        'VariableHandlingCharges': None,
+                        'TotalVariableHandlingCharges': None
+                    },
+                    'RatedPackages': [
+                        {
+                            'TrackingIds': [],
+                            'GroupNumber': 1,
+                            'EffectiveNetDiscount': {
+                                'Currency': 'USD',
+                                'Amount': Decimal('6.11')
+                            },
+                            'AdjustedCodCollectionAmount': None,
+                            'OversizeClass': None,
+                            'PackageRateDetail': {
+                                'RateType': 'PAYOR_ACCOUNT_PACKAGE',
+                                'RatedWeightMethod': 'ACTUAL',
+                                'MinimumChargeType': None,
+                                'BillingWeight': {
+                                    'Units': 'LB',
+                                    'Value': Decimal('1.0')
+                                },
+                                'DimWeight': None,
+                                'OversizeWeight': None,
+                                'BaseCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('23.5')
+                                },
+                                'TotalFreightDiscounts': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'NetFreight': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('23.5')
+                                },
+                                'TotalSurcharges': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('1.76')
+                                },
+                                'NetFedExCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('25.26')
+                                },
+                                'TotalTaxes': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'NetCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('25.26')
+                                },
+                                'TotalRebates': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'FreightDiscounts': [],
+                                'Rebates': [],
+                                'Surcharges': [
+                                    {
+                                        'SurchargeType': 'FUEL',
+                                        'Level': None,
+                                        'Description': 'Fuel',
+                                        'Amount': {
+                                            'Currency': 'USD',
+                                            'Amount': Decimal('1.76')
+                                        }
+                                    }
+                                ],
+                                'Taxes': [],
+                                'VariableHandlingCharges': None
+                            }
+                        }
+                    ]
+                },
+                {
+                    'EffectiveNetDiscount': None,
+                    'AdjustedCodCollectionAmount': None,
+                    'ShipmentRateDetail': {
+                        'RateType': 'PAYOR_LIST_PACKAGE',
+                        'RateScale': '1486',
+                        'RateZone': '02',
+                        'PricingCode': 'PACKAGE',
+                        'RatedWeightMethod': 'ACTUAL',
+                        'MinimumChargeType': None,
+                        'CurrencyExchangeRate': None,
+                        'SpecialRatingApplied': [],
+                        'DimDivisor': 139,
+                        'DimDivisorType': None,
+                        'FuelSurchargePercent': Decimal('7.5'),
+                        'TotalBillingWeight': {
+                            'Units': 'LB',
+                            'Value': Decimal('1.0')
+                        },
+                        'TotalDimWeight': None,
+                        'TotalBaseCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('29.18')
+                        },
+                        'TotalFreightDiscounts': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetFreight': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('29.18')
+                        },
+                        'TotalSurcharges': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('2.19')
+                        },
+                        'TotalNetFedExCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('31.37')
+                        },
+                        'TotalTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('31.37')
+                        },
+                        'TotalRebates': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalDutiesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalAncillaryFeesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalDutiesTaxesAndFees': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetChargeWithDutiesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('31.37')
+                        },
+                        'ShipmentLegRateDetails': [],
+                        'FreightRateDetail': None,
+                        'FreightDiscounts': [],
+                        'Rebates': [],
+                        'Surcharges': [
+                            {
+                                'SurchargeType': 'FUEL',
+                                'Level': None,
+                                'Description': 'Fuel',
+                                'Amount': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('2.19')
+                                }
+                            }
+                        ],
+                        'Taxes': [],
+                        'DutiesAndTaxes': [],
+                        'AncillaryFeesAndTaxes': [],
+                        'VariableHandlingCharges': None,
+                        'TotalVariableHandlingCharges': None
+                    },
+                    'RatedPackages': [
+                        {
+                            'TrackingIds': [],
+                            'GroupNumber': 1,
+                            'EffectiveNetDiscount': None,
+                            'AdjustedCodCollectionAmount': None,
+                            'OversizeClass': None,
+                            'PackageRateDetail': {
+                                'RateType': 'PAYOR_LIST_PACKAGE',
+                                'RatedWeightMethod': 'ACTUAL',
+                                'MinimumChargeType': None,
+                                'BillingWeight': {
+                                    'Units': 'LB',
+                                    'Value': Decimal('1.0')
+                                },
+                                'DimWeight': None,
+                                'OversizeWeight': None,
+                                'BaseCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('29.18')
+                                },
+                                'TotalFreightDiscounts': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'NetFreight': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('29.18')
+                                },
+                                'TotalSurcharges': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('2.19')
+                                },
+                                'NetFedExCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('31.37')
+                                },
+                                'TotalTaxes': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'NetCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('31.37')
+                                },
+                                'TotalRebates': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'FreightDiscounts': [],
+                                'Rebates': [],
+                                'Surcharges': [
+                                    {
+                                        'SurchargeType': 'FUEL',
+                                        'Level': None,
+                                        'Description': 'Fuel',
+                                        'Amount': {
+                                            'Currency': 'USD',
+                                            'Amount': Decimal('2.19')
+                                        }
+                                    }
+                                ],
+                                'Taxes': [],
+                                'VariableHandlingCharges': None
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            'ServiceType': 'STANDARD_OVERNIGHT',
+            'ServiceDescription': {
+                'ServiceType': 'STANDARD_OVERNIGHT',
+                'Code': '05',
+                'Names': [
+                    {
+                        'Type': 'long',
+                        'Encoding': 'utf-8',
+                        'Value': 'FedEx Standard Overnight®'
+                    },
+                    {
+                        'Type': 'long',
+                        'Encoding': 'ascii',
+                        'Value': 'FedEx Standard Overnight'
+                    },
+                    {
+                        'Type': 'medium',
+                        'Encoding': 'utf-8',
+                        'Value': 'FedEx Standard Overnight®'
+                    },
+                    {
+                        'Type': 'medium',
+                        'Encoding': 'ascii',
+                        'Value': 'FedEx Standard Overnight'
+                    },
+                    {
+                        'Type': 'short',
+                        'Encoding': 'utf-8',
+                        'Value': 'SOS'
+                    },
+                    {
+                        'Type': 'short',
+                        'Encoding': 'ascii',
+                        'Value': 'SOS'
+                    },
+                    {
+                        'Type': 'abbrv',
+                        'Encoding': 'ascii',
+                        'Value': 'SO'
+                    }
+                ],
+                'Description': 'Standard Overnight',
+                'AstraDescription': 'STD OVR'
+            },
+            'PackagingType': 'YOUR_PACKAGING',
+            'AppliedOptions': [],
+            'AppliedSubOptions': None,
+            'DeliveryStation': None,
+            'DeliveryDayOfWeek': None,
+            'DeliveryTimestamp': None,
+            'CommitDetails': [],
+            'DestinationAirportId': 'SEA',
+            'IneligibleForMoneyBackGuarantee': False,
+            'OriginServiceArea': 'A2',
+            'DestinationServiceArea': 'A2',
+            'TransitTime': None,
+            'MaximumTransitTime': None,
+            'SignatureOption': 'SERVICE_DEFAULT',
+            'ActualRateType': 'PAYOR_ACCOUNT_PACKAGE',
+            'RatedShipmentDetails': [
+                {
+                    'EffectiveNetDiscount': {
+                        'Currency': 'USD',
+                        'Amount': Decimal('0.0')
+                    },
+                    'AdjustedCodCollectionAmount': None,
+                    'ShipmentRateDetail': {
+                        'RateType': 'PAYOR_ACCOUNT_PACKAGE',
+                        'RateScale': '1283',
+                        'RateZone': '02',
+                        'PricingCode': 'PACKAGE',
+                        'RatedWeightMethod': 'ACTUAL',
+                        'MinimumChargeType': None,
+                        'CurrencyExchangeRate': None,
+                        'SpecialRatingApplied': [],
+                        'DimDivisor': 194,
+                        'DimDivisorType': None,
+                        'FuelSurchargePercent': Decimal('7.5'),
+                        'TotalBillingWeight': {
+                            'Units': 'LB',
+                            'Value': Decimal('1.0')
+                        },
+                        'TotalDimWeight': None,
+                        'TotalBaseCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('27.18')
+                        },
+                        'TotalFreightDiscounts': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetFreight': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('27.18')
+                        },
+                        'TotalSurcharges': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('2.04')
+                        },
+                        'TotalNetFedExCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('29.22')
+                        },
+                        'TotalTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('29.22')
+                        },
+                        'TotalRebates': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalDutiesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalAncillaryFeesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalDutiesTaxesAndFees': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetChargeWithDutiesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('29.22')
+                        },
+                        'ShipmentLegRateDetails': [],
+                        'FreightRateDetail': None,
+                        'FreightDiscounts': [],
+                        'Rebates': [],
+                        'Surcharges': [
+                            {
+                                'SurchargeType': 'FUEL',
+                                'Level': None,
+                                'Description': 'Fuel',
+                                'Amount': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('2.04')
+                                }
+                            }
+                        ],
+                        'Taxes': [],
+                        'DutiesAndTaxes': [],
+                        'AncillaryFeesAndTaxes': [],
+                        'VariableHandlingCharges': None,
+                        'TotalVariableHandlingCharges': None
+                    },
+                    'RatedPackages': [
+                        {
+                            'TrackingIds': [],
+                            'GroupNumber': 1,
+                            'EffectiveNetDiscount': {
+                                'Currency': 'USD',
+                                'Amount': Decimal('0.0')
+                            },
+                            'AdjustedCodCollectionAmount': None,
+                            'OversizeClass': None,
+                            'PackageRateDetail': {
+                                'RateType': 'PAYOR_ACCOUNT_PACKAGE',
+                                'RatedWeightMethod': 'ACTUAL',
+                                'MinimumChargeType': None,
+                                'BillingWeight': {
+                                    'Units': 'LB',
+                                    'Value': Decimal('1.0')
+                                },
+                                'DimWeight': None,
+                                'OversizeWeight': None,
+                                'BaseCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('27.18')
+                                },
+                                'TotalFreightDiscounts': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'NetFreight': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('27.18')
+                                },
+                                'TotalSurcharges': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('2.04')
+                                },
+                                'NetFedExCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('29.22')
+                                },
+                                'TotalTaxes': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'NetCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('29.22')
+                                },
+                                'TotalRebates': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'FreightDiscounts': [],
+                                'Rebates': [],
+                                'Surcharges': [
+                                    {
+                                        'SurchargeType': 'FUEL',
+                                        'Level': None,
+                                        'Description': 'Fuel',
+                                        'Amount': {
+                                            'Currency': 'USD',
+                                            'Amount': Decimal('2.04')
+                                        }
+                                    }
+                                ],
+                                'Taxes': [],
+                                'VariableHandlingCharges': None
+                            }
+                        }
+                    ]
+                },
+                {
+                    'EffectiveNetDiscount': None,
+                    'AdjustedCodCollectionAmount': None,
+                    'ShipmentRateDetail': {
+                        'RateType': 'PAYOR_LIST_PACKAGE',
+                        'RateScale': '1283',
+                        'RateZone': '02',
+                        'PricingCode': 'PACKAGE',
+                        'RatedWeightMethod': 'ACTUAL',
+                        'MinimumChargeType': None,
+                        'CurrencyExchangeRate': None,
+                        'SpecialRatingApplied': [],
+                        'DimDivisor': 139,
+                        'DimDivisorType': None,
+                        'FuelSurchargePercent': Decimal('7.5'),
+                        'TotalBillingWeight': {
+                            'Units': 'LB',
+                            'Value': Decimal('1.0')
+                        },
+                        'TotalDimWeight': None,
+                        'TotalBaseCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('27.18')
+                        },
+                        'TotalFreightDiscounts': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetFreight': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('27.18')
+                        },
+                        'TotalSurcharges': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('2.04')
+                        },
+                        'TotalNetFedExCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('29.22')
+                        },
+                        'TotalTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('29.22')
+                        },
+                        'TotalRebates': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalDutiesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalAncillaryFeesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalDutiesTaxesAndFees': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetChargeWithDutiesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('29.22')
+                        },
+                        'ShipmentLegRateDetails': [],
+                        'FreightRateDetail': None,
+                        'FreightDiscounts': [],
+                        'Rebates': [],
+                        'Surcharges': [
+                            {
+                                'SurchargeType': 'FUEL',
+                                'Level': None,
+                                'Description': 'Fuel',
+                                'Amount': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('2.04')
+                                }
+                            }
+                        ],
+                        'Taxes': [],
+                        'DutiesAndTaxes': [],
+                        'AncillaryFeesAndTaxes': [],
+                        'VariableHandlingCharges': None,
+                        'TotalVariableHandlingCharges': None
+                    },
+                    'RatedPackages': [
+                        {
+                            'TrackingIds': [],
+                            'GroupNumber': 1,
+                            'EffectiveNetDiscount': None,
+                            'AdjustedCodCollectionAmount': None,
+                            'OversizeClass': None,
+                            'PackageRateDetail': {
+                                'RateType': 'PAYOR_LIST_PACKAGE',
+                                'RatedWeightMethod': 'ACTUAL',
+                                'MinimumChargeType': None,
+                                'BillingWeight': {
+                                    'Units': 'LB',
+                                    'Value': Decimal('1.0')
+                                },
+                                'DimWeight': None,
+                                'OversizeWeight': None,
+                                'BaseCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('27.18')
+                                },
+                                'TotalFreightDiscounts': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'NetFreight': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('27.18')
+                                },
+                                'TotalSurcharges': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('2.04')
+                                },
+                                'NetFedExCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('29.22')
+                                },
+                                'TotalTaxes': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'NetCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('29.22')
+                                },
+                                'TotalRebates': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'FreightDiscounts': [],
+                                'Rebates': [],
+                                'Surcharges': [
+                                    {
+                                        'SurchargeType': 'FUEL',
+                                        'Level': None,
+                                        'Description': 'Fuel',
+                                        'Amount': {
+                                            'Currency': 'USD',
+                                            'Amount': Decimal('2.04')
+                                        }
+                                    }
+                                ],
+                                'Taxes': [],
+                                'VariableHandlingCharges': None
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            'ServiceType': 'FEDEX_2_DAY_AM',
+            'ServiceDescription': {
+                'ServiceType': 'FEDEX_2_DAY_AM',
+                'Code': '49',
+                'Names': [
+                    {
+                        'Type': 'long',
+                        'Encoding': 'utf-8',
+                        'Value': 'FedEx 2Day® AM'
+                    },
+                    {
+                        'Type': 'long',
+                        'Encoding': 'ascii',
+                        'Value': 'FedEx 2Day AM'
+                    },
+                    {
+                        'Type': 'medium',
+                        'Encoding': 'utf-8',
+                        'Value': 'FedEx 2Day® AM'
+                    },
+                    {
+                        'Type': 'medium',
+                        'Encoding': 'ascii',
+                        'Value': 'FedEx 2Day AM'
+                    },
+                    {
+                        'Type': 'short',
+                        'Encoding': 'utf-8',
+                        'Value': 'E2AM'
+                    },
+                    {
+                        'Type': 'short',
+                        'Encoding': 'ascii',
+                        'Value': 'E2AM'
+                    },
+                    {
+                        'Type': 'abbrv',
+                        'Encoding': 'ascii',
+                        'Value': 'TA'
+                    }
+                ],
+                'Description': '2DAY AM',
+                'AstraDescription': '2DAY AM'
+            },
+            'PackagingType': 'YOUR_PACKAGING',
+            'AppliedOptions': [],
+            'AppliedSubOptions': None,
+            'DeliveryStation': None,
+            'DeliveryDayOfWeek': None,
+            'DeliveryTimestamp': None,
+            'CommitDetails': [],
+            'DestinationAirportId': 'SEA',
+            'IneligibleForMoneyBackGuarantee': False,
+            'OriginServiceArea': 'A2',
+            'DestinationServiceArea': 'A2',
+            'TransitTime': None,
+            'MaximumTransitTime': None,
+            'SignatureOption': 'SERVICE_DEFAULT',
+            'ActualRateType': 'PAYOR_ACCOUNT_PACKAGE',
+            'RatedShipmentDetails': [
+                {
+                    'EffectiveNetDiscount': {
+                        'Currency': 'USD',
+                        'Amount': Decimal('0.0')
+                    },
+                    'AdjustedCodCollectionAmount': None,
+                    'ShipmentRateDetail': {
+                        'RateType': 'PAYOR_ACCOUNT_PACKAGE',
+                        'RateScale': '4',
+                        'RateZone': '02',
+                        'PricingCode': 'PACKAGE',
+                        'RatedWeightMethod': 'ACTUAL',
+                        'MinimumChargeType': None,
+                        'CurrencyExchangeRate': None,
+                        'SpecialRatingApplied': [],
+                        'DimDivisor': 194,
+                        'DimDivisorType': None,
+                        'FuelSurchargePercent': Decimal('7.5'),
+                        'TotalBillingWeight': {
+                            'Units': 'LB',
+                            'Value': Decimal('1.0')
+                        },
+                        'TotalDimWeight': None,
+                        'TotalBaseCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('19.71')
+                        },
+                        'TotalFreightDiscounts': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetFreight': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('19.71')
+                        },
+                        'TotalSurcharges': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('1.48')
+                        },
+                        'TotalNetFedExCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('21.19')
+                        },
+                        'TotalTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('21.19')
+                        },
+                        'TotalRebates': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalDutiesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalAncillaryFeesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalDutiesTaxesAndFees': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetChargeWithDutiesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('21.19')
+                        },
+                        'ShipmentLegRateDetails': [],
+                        'FreightRateDetail': None,
+                        'FreightDiscounts': [],
+                        'Rebates': [],
+                        'Surcharges': [
+                            {
+                                'SurchargeType': 'FUEL',
+                                'Level': None,
+                                'Description': 'Fuel',
+                                'Amount': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('1.48')
+                                }
+                            }
+                        ],
+                        'Taxes': [],
+                        'DutiesAndTaxes': [],
+                        'AncillaryFeesAndTaxes': [],
+                        'VariableHandlingCharges': None,
+                        'TotalVariableHandlingCharges': None
+                    },
+                    'RatedPackages': [
+                        {
+                            'TrackingIds': [],
+                            'GroupNumber': 1,
+                            'EffectiveNetDiscount': {
+                                'Currency': 'USD',
+                                'Amount': Decimal('0.0')
+                            },
+                            'AdjustedCodCollectionAmount': None,
+                            'OversizeClass': None,
+                            'PackageRateDetail': {
+                                'RateType': 'PAYOR_ACCOUNT_PACKAGE',
+                                'RatedWeightMethod': 'ACTUAL',
+                                'MinimumChargeType': None,
+                                'BillingWeight': {
+                                    'Units': 'LB',
+                                    'Value': Decimal('1.0')
+                                },
+                                'DimWeight': None,
+                                'OversizeWeight': None,
+                                'BaseCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('19.71')
+                                },
+                                'TotalFreightDiscounts': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'NetFreight': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('19.71')
+                                },
+                                'TotalSurcharges': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('1.48')
+                                },
+                                'NetFedExCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('21.19')
+                                },
+                                'TotalTaxes': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'NetCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('21.19')
+                                },
+                                'TotalRebates': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'FreightDiscounts': [],
+                                'Rebates': [],
+                                'Surcharges': [
+                                    {
+                                        'SurchargeType': 'FUEL',
+                                        'Level': None,
+                                        'Description': 'Fuel',
+                                        'Amount': {
+                                            'Currency': 'USD',
+                                            'Amount': Decimal('1.48')
+                                        }
+                                    }
+                                ],
+                                'Taxes': [],
+                                'VariableHandlingCharges': None
+                            }
+                        }
+                    ]
+                },
+                {
+                    'EffectiveNetDiscount': None,
+                    'AdjustedCodCollectionAmount': None,
+                    'ShipmentRateDetail': {
+                        'RateType': 'PAYOR_LIST_PACKAGE',
+                        'RateScale': '4',
+                        'RateZone': '02',
+                        'PricingCode': 'PACKAGE',
+                        'RatedWeightMethod': 'ACTUAL',
+                        'MinimumChargeType': None,
+                        'CurrencyExchangeRate': None,
+                        'SpecialRatingApplied': [],
+                        'DimDivisor': 139,
+                        'DimDivisorType': None,
+                        'FuelSurchargePercent': Decimal('7.5'),
+                        'TotalBillingWeight': {
+                            'Units': 'LB',
+                            'Value': Decimal('1.0')
+                        },
+                        'TotalDimWeight': None,
+                        'TotalBaseCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('19.71')
+                        },
+                        'TotalFreightDiscounts': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetFreight': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('19.71')
+                        },
+                        'TotalSurcharges': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('1.48')
+                        },
+                        'TotalNetFedExCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('21.19')
+                        },
+                        'TotalTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('21.19')
+                        },
+                        'TotalRebates': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalDutiesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalAncillaryFeesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalDutiesTaxesAndFees': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetChargeWithDutiesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('21.19')
+                        },
+                        'ShipmentLegRateDetails': [],
+                        'FreightRateDetail': None,
+                        'FreightDiscounts': [],
+                        'Rebates': [],
+                        'Surcharges': [
+                            {
+                                'SurchargeType': 'FUEL',
+                                'Level': None,
+                                'Description': 'Fuel',
+                                'Amount': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('1.48')
+                                }
+                            }
+                        ],
+                        'Taxes': [],
+                        'DutiesAndTaxes': [],
+                        'AncillaryFeesAndTaxes': [],
+                        'VariableHandlingCharges': None,
+                        'TotalVariableHandlingCharges': None
+                    },
+                    'RatedPackages': [
+                        {
+                            'TrackingIds': [],
+                            'GroupNumber': 1,
+                            'EffectiveNetDiscount': None,
+                            'AdjustedCodCollectionAmount': None,
+                            'OversizeClass': None,
+                            'PackageRateDetail': {
+                                'RateType': 'PAYOR_LIST_PACKAGE',
+                                'RatedWeightMethod': 'ACTUAL',
+                                'MinimumChargeType': None,
+                                'BillingWeight': {
+                                    'Units': 'LB',
+                                    'Value': Decimal('1.0')
+                                },
+                                'DimWeight': None,
+                                'OversizeWeight': None,
+                                'BaseCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('19.71')
+                                },
+                                'TotalFreightDiscounts': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'NetFreight': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('19.71')
+                                },
+                                'TotalSurcharges': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('1.48')
+                                },
+                                'NetFedExCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('21.19')
+                                },
+                                'TotalTaxes': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'NetCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('21.19')
+                                },
+                                'TotalRebates': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'FreightDiscounts': [],
+                                'Rebates': [],
+                                'Surcharges': [
+                                    {
+                                        'SurchargeType': 'FUEL',
+                                        'Level': None,
+                                        'Description': 'Fuel',
+                                        'Amount': {
+                                            'Currency': 'USD',
+                                            'Amount': Decimal('1.48')
+                                        }
+                                    }
+                                ],
+                                'Taxes': [],
+                                'VariableHandlingCharges': None
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            'ServiceType': 'FEDEX_2_DAY',
+            'ServiceDescription': {
+                'ServiceType': 'FEDEX_2_DAY',
+                'Code': '03',
+                'Names': [
+                    {
+                        'Type': 'long',
+                        'Encoding': 'utf-8',
+                        'Value': 'FedEx 2Day®'
+                    },
+                    {
+                        'Type': 'long',
+                        'Encoding': 'ascii',
+                        'Value': 'FedEx 2Day'
+                    },
+                    {
+                        'Type': 'medium',
+                        'Encoding': 'utf-8',
+                        'Value': 'FedEx 2Day®'
+                    },
+                    {
+                        'Type': 'medium',
+                        'Encoding': 'ascii',
+                        'Value': 'FedEx 2Day'
+                    },
+                    {
+                        'Type': 'short',
+                        'Encoding': 'utf-8',
+                        'Value': 'P-2'
+                    },
+                    {
+                        'Type': 'short',
+                        'Encoding': 'ascii',
+                        'Value': 'P-2'
+                    },
+                    {
+                        'Type': 'abbrv',
+                        'Encoding': 'ascii',
+                        'Value': 'ES'
+                    }
+                ],
+                'Description': '2Day',
+                'AstraDescription': 'E2'
+            },
+            'PackagingType': 'YOUR_PACKAGING',
+            'AppliedOptions': [],
+            'AppliedSubOptions': None,
+            'DeliveryStation': None,
+            'DeliveryDayOfWeek': None,
+            'DeliveryTimestamp': None,
+            'CommitDetails': [],
+            'DestinationAirportId': 'SEA',
+            'IneligibleForMoneyBackGuarantee': False,
+            'OriginServiceArea': 'A2',
+            'DestinationServiceArea': 'A2',
+            'TransitTime': None,
+            'MaximumTransitTime': None,
+            'SignatureOption': 'SERVICE_DEFAULT',
+            'ActualRateType': 'PAYOR_ACCOUNT_PACKAGE',
+            'RatedShipmentDetails': [
+                {
+                    'EffectiveNetDiscount': {
+                        'Currency': 'USD',
+                        'Amount': Decimal('0.0')
+                    },
+                    'AdjustedCodCollectionAmount': None,
+                    'ShipmentRateDetail': {
+                        'RateType': 'PAYOR_ACCOUNT_PACKAGE',
+                        'RateScale': '5980',
+                        'RateZone': '02',
+                        'PricingCode': 'PACKAGE',
+                        'RatedWeightMethod': 'ACTUAL',
+                        'MinimumChargeType': None,
+                        'CurrencyExchangeRate': None,
+                        'SpecialRatingApplied': [],
+                        'DimDivisor': 194,
+                        'DimDivisorType': None,
+                        'FuelSurchargePercent': Decimal('7.5'),
+                        'TotalBillingWeight': {
+                            'Units': 'LB',
+                            'Value': Decimal('1.0')
+                        },
+                        'TotalDimWeight': None,
+                        'TotalBaseCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('18.22')
+                        },
+                        'TotalFreightDiscounts': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetFreight': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('18.22')
+                        },
+                        'TotalSurcharges': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('1.37')
+                        },
+                        'TotalNetFedExCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('19.59')
+                        },
+                        'TotalTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('19.59')
+                        },
+                        'TotalRebates': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalDutiesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalAncillaryFeesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalDutiesTaxesAndFees': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetChargeWithDutiesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('19.59')
+                        },
+                        'ShipmentLegRateDetails': [],
+                        'FreightRateDetail': None,
+                        'FreightDiscounts': [],
+                        'Rebates': [],
+                        'Surcharges': [
+                            {
+                                'SurchargeType': 'FUEL',
+                                'Level': None,
+                                'Description': 'Fuel',
+                                'Amount': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('1.37')
+                                }
+                            }
+                        ],
+                        'Taxes': [],
+                        'DutiesAndTaxes': [],
+                        'AncillaryFeesAndTaxes': [],
+                        'VariableHandlingCharges': None,
+                        'TotalVariableHandlingCharges': None
+                    },
+                    'RatedPackages': [
+                        {
+                            'TrackingIds': [],
+                            'GroupNumber': 1,
+                            'EffectiveNetDiscount': {
+                                'Currency': 'USD',
+                                'Amount': Decimal('0.0')
+                            },
+                            'AdjustedCodCollectionAmount': None,
+                            'OversizeClass': None,
+                            'PackageRateDetail': {
+                                'RateType': 'PAYOR_ACCOUNT_PACKAGE',
+                                'RatedWeightMethod': 'ACTUAL',
+                                'MinimumChargeType': None,
+                                'BillingWeight': {
+                                    'Units': 'LB',
+                                    'Value': Decimal('1.0')
+                                },
+                                'DimWeight': None,
+                                'OversizeWeight': None,
+                                'BaseCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('18.22')
+                                },
+                                'TotalFreightDiscounts': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'NetFreight': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('18.22')
+                                },
+                                'TotalSurcharges': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('1.37')
+                                },
+                                'NetFedExCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('19.59')
+                                },
+                                'TotalTaxes': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'NetCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('19.59')
+                                },
+                                'TotalRebates': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'FreightDiscounts': [],
+                                'Rebates': [],
+                                'Surcharges': [
+                                    {
+                                        'SurchargeType': 'FUEL',
+                                        'Level': None,
+                                        'Description': 'Fuel',
+                                        'Amount': {
+                                            'Currency': 'USD',
+                                            'Amount': Decimal('1.37')
+                                        }
+                                    }
+                                ],
+                                'Taxes': [],
+                                'VariableHandlingCharges': None
+                            }
+                        }
+                    ]
+                },
+                {
+                    'EffectiveNetDiscount': None,
+                    'AdjustedCodCollectionAmount': None,
+                    'ShipmentRateDetail': {
+                        'RateType': 'PAYOR_LIST_PACKAGE',
+                        'RateScale': '5980',
+                        'RateZone': '02',
+                        'PricingCode': 'PACKAGE',
+                        'RatedWeightMethod': 'ACTUAL',
+                        'MinimumChargeType': None,
+                        'CurrencyExchangeRate': None,
+                        'SpecialRatingApplied': [],
+                        'DimDivisor': 139,
+                        'DimDivisorType': None,
+                        'FuelSurchargePercent': Decimal('7.5'),
+                        'TotalBillingWeight': {
+                            'Units': 'LB',
+                            'Value': Decimal('1.0')
+                        },
+                        'TotalDimWeight': None,
+                        'TotalBaseCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('18.22')
+                        },
+                        'TotalFreightDiscounts': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetFreight': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('18.22')
+                        },
+                        'TotalSurcharges': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('1.37')
+                        },
+                        'TotalNetFedExCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('19.59')
+                        },
+                        'TotalTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('19.59')
+                        },
+                        'TotalRebates': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalDutiesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalAncillaryFeesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalDutiesTaxesAndFees': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetChargeWithDutiesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('19.59')
+                        },
+                        'ShipmentLegRateDetails': [],
+                        'FreightRateDetail': None,
+                        'FreightDiscounts': [],
+                        'Rebates': [],
+                        'Surcharges': [
+                            {
+                                'SurchargeType': 'FUEL',
+                                'Level': None,
+                                'Description': 'Fuel',
+                                'Amount': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('1.37')
+                                }
+                            }
+                        ],
+                        'Taxes': [],
+                        'DutiesAndTaxes': [],
+                        'AncillaryFeesAndTaxes': [],
+                        'VariableHandlingCharges': None,
+                        'TotalVariableHandlingCharges': None
+                    },
+                    'RatedPackages': [
+                        {
+                            'TrackingIds': [],
+                            'GroupNumber': 1,
+                            'EffectiveNetDiscount': None,
+                            'AdjustedCodCollectionAmount': None,
+                            'OversizeClass': None,
+                            'PackageRateDetail': {
+                                'RateType': 'PAYOR_LIST_PACKAGE',
+                                'RatedWeightMethod': 'ACTUAL',
+                                'MinimumChargeType': None,
+                                'BillingWeight': {
+                                    'Units': 'LB',
+                                    'Value': Decimal('1.0')
+                                },
+                                'DimWeight': None,
+                                'OversizeWeight': None,
+                                'BaseCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('18.22')
+                                },
+                                'TotalFreightDiscounts': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'NetFreight': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('18.22')
+                                },
+                                'TotalSurcharges': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('1.37')
+                                },
+                                'NetFedExCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('19.59')
+                                },
+                                'TotalTaxes': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'NetCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('19.59')
+                                },
+                                'TotalRebates': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'FreightDiscounts': [],
+                                'Rebates': [],
+                                'Surcharges': [
+                                    {
+                                        'SurchargeType': 'FUEL',
+                                        'Level': None,
+                                        'Description': 'Fuel',
+                                        'Amount': {
+                                            'Currency': 'USD',
+                                            'Amount': Decimal('1.37')
+                                        }
+                                    }
+                                ],
+                                'Taxes': [],
+                                'VariableHandlingCharges': None
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            'ServiceType': 'FEDEX_EXPRESS_SAVER',
+            'ServiceDescription': {
+                'ServiceType': 'FEDEX_EXPRESS_SAVER',
+                'Code': '20',
+                'Names': [
+                    {
+                        'Type': 'long',
+                        'Encoding': 'utf-8',
+                        'Value': 'FedEx Express Saver®'
+                    },
+                    {
+                        'Type': 'long',
+                        'Encoding': 'ascii',
+                        'Value': 'FedEx Express Saver'
+                    },
+                    {
+                        'Type': 'medium',
+                        'Encoding': 'utf-8',
+                        'Value': 'FedEx Express Saver®'
+                    },
+                    {
+                        'Type': 'medium',
+                        'Encoding': 'ascii',
+                        'Value': 'FedEx Express Saver'
+                    }
+                ],
+                'Description': 'Express Saver',
+                'AstraDescription': 'XS'
+            },
+            'PackagingType': 'YOUR_PACKAGING',
+            'AppliedOptions': [],
+            'AppliedSubOptions': None,
+            'DeliveryStation': None,
+            'DeliveryDayOfWeek': None,
+            'DeliveryTimestamp': None,
+            'CommitDetails': [],
+            'DestinationAirportId': 'SEA',
+            'IneligibleForMoneyBackGuarantee': False,
+            'OriginServiceArea': 'A2',
+            'DestinationServiceArea': 'A2',
+            'TransitTime': None,
+            'MaximumTransitTime': None,
+            'SignatureOption': 'SERVICE_DEFAULT',
+            'ActualRateType': 'PAYOR_ACCOUNT_PACKAGE',
+            'RatedShipmentDetails': [
+                {
+                    'EffectiveNetDiscount': {
+                        'Currency': 'USD',
+                        'Amount': Decimal('0.0')
+                    },
+                    'AdjustedCodCollectionAmount': None,
+                    'ShipmentRateDetail': {
+                        'RateType': 'PAYOR_ACCOUNT_PACKAGE',
+                        'RateScale': '7167',
+                        'RateZone': '02',
+                        'PricingCode': 'PACKAGE',
+                        'RatedWeightMethod': 'ACTUAL',
+                        'MinimumChargeType': None,
+                        'CurrencyExchangeRate': None,
+                        'SpecialRatingApplied': [],
+                        'DimDivisor': 194,
+                        'DimDivisorType': None,
+                        'FuelSurchargePercent': Decimal('7.5'),
+                        'TotalBillingWeight': {
+                            'Units': 'LB',
+                            'Value': Decimal('1.0')
+                        },
+                        'TotalDimWeight': None,
+                        'TotalBaseCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('16.07')
+                        },
+                        'TotalFreightDiscounts': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetFreight': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('16.07')
+                        },
+                        'TotalSurcharges': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('1.21')
+                        },
+                        'TotalNetFedExCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('17.28')
+                        },
+                        'TotalTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('17.28')
+                        },
+                        'TotalRebates': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalDutiesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalAncillaryFeesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalDutiesTaxesAndFees': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetChargeWithDutiesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('17.28')
+                        },
+                        'ShipmentLegRateDetails': [],
+                        'FreightRateDetail': None,
+                        'FreightDiscounts': [],
+                        'Rebates': [],
+                        'Surcharges': [
+                            {
+                                'SurchargeType': 'FUEL',
+                                'Level': None,
+                                'Description': 'Fuel',
+                                'Amount': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('1.21')
+                                }
+                            }
+                        ],
+                        'Taxes': [],
+                        'DutiesAndTaxes': [],
+                        'AncillaryFeesAndTaxes': [],
+                        'VariableHandlingCharges': None,
+                        'TotalVariableHandlingCharges': None
+                    },
+                    'RatedPackages': [
+                        {
+                            'TrackingIds': [],
+                            'GroupNumber': 1,
+                            'EffectiveNetDiscount': {
+                                'Currency': 'USD',
+                                'Amount': Decimal('0.0')
+                            },
+                            'AdjustedCodCollectionAmount': None,
+                            'OversizeClass': None,
+                            'PackageRateDetail': {
+                                'RateType': 'PAYOR_ACCOUNT_PACKAGE',
+                                'RatedWeightMethod': 'ACTUAL',
+                                'MinimumChargeType': None,
+                                'BillingWeight': {
+                                    'Units': 'LB',
+                                    'Value': Decimal('1.0')
+                                },
+                                'DimWeight': None,
+                                'OversizeWeight': None,
+                                'BaseCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('16.07')
+                                },
+                                'TotalFreightDiscounts': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'NetFreight': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('16.07')
+                                },
+                                'TotalSurcharges': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('1.21')
+                                },
+                                'NetFedExCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('17.28')
+                                },
+                                'TotalTaxes': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'NetCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('17.28')
+                                },
+                                'TotalRebates': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'FreightDiscounts': [],
+                                'Rebates': [],
+                                'Surcharges': [
+                                    {
+                                        'SurchargeType': 'FUEL',
+                                        'Level': None,
+                                        'Description': 'Fuel',
+                                        'Amount': {
+                                            'Currency': 'USD',
+                                            'Amount': Decimal('1.21')
+                                        }
+                                    }
+                                ],
+                                'Taxes': [],
+                                'VariableHandlingCharges': None
+                            }
+                        }
+                    ]
+                },
+                {
+                    'EffectiveNetDiscount': None,
+                    'AdjustedCodCollectionAmount': None,
+                    'ShipmentRateDetail': {
+                        'RateType': 'PAYOR_LIST_PACKAGE',
+                        'RateScale': '7167',
+                        'RateZone': '02',
+                        'PricingCode': 'PACKAGE',
+                        'RatedWeightMethod': 'ACTUAL',
+                        'MinimumChargeType': None,
+                        'CurrencyExchangeRate': None,
+                        'SpecialRatingApplied': [],
+                        'DimDivisor': 139,
+                        'DimDivisorType': None,
+                        'FuelSurchargePercent': Decimal('7.5'),
+                        'TotalBillingWeight': {
+                            'Units': 'LB',
+                            'Value': Decimal('1.0')
+                        },
+                        'TotalDimWeight': None,
+                        'TotalBaseCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('16.07')
+                        },
+                        'TotalFreightDiscounts': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetFreight': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('16.07')
+                        },
+                        'TotalSurcharges': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('1.21')
+                        },
+                        'TotalNetFedExCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('17.28')
+                        },
+                        'TotalTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('17.28')
+                        },
+                        'TotalRebates': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalDutiesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalAncillaryFeesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalDutiesTaxesAndFees': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetChargeWithDutiesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('17.28')
+                        },
+                        'ShipmentLegRateDetails': [],
+                        'FreightRateDetail': None,
+                        'FreightDiscounts': [],
+                        'Rebates': [],
+                        'Surcharges': [
+                            {
+                                'SurchargeType': 'FUEL',
+                                'Level': None,
+                                'Description': 'Fuel',
+                                'Amount': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('1.21')
+                                }
+                            }
+                        ],
+                        'Taxes': [],
+                        'DutiesAndTaxes': [],
+                        'AncillaryFeesAndTaxes': [],
+                        'VariableHandlingCharges': None,
+                        'TotalVariableHandlingCharges': None
+                    },
+                    'RatedPackages': [
+                        {
+                            'TrackingIds': [],
+                            'GroupNumber': 1,
+                            'EffectiveNetDiscount': None,
+                            'AdjustedCodCollectionAmount': None,
+                            'OversizeClass': None,
+                            'PackageRateDetail': {
+                                'RateType': 'PAYOR_LIST_PACKAGE',
+                                'RatedWeightMethod': 'ACTUAL',
+                                'MinimumChargeType': None,
+                                'BillingWeight': {
+                                    'Units': 'LB',
+                                    'Value': Decimal('1.0')
+                                },
+                                'DimWeight': None,
+                                'OversizeWeight': None,
+                                'BaseCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('16.07')
+                                },
+                                'TotalFreightDiscounts': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'NetFreight': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('16.07')
+                                },
+                                'TotalSurcharges': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('1.21')
+                                },
+                                'NetFedExCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('17.28')
+                                },
+                                'TotalTaxes': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'NetCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('17.28')
+                                },
+                                'TotalRebates': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'FreightDiscounts': [],
+                                'Rebates': [],
+                                'Surcharges': [
+                                    {
+                                        'SurchargeType': 'FUEL',
+                                        'Level': None,
+                                        'Description': 'Fuel',
+                                        'Amount': {
+                                            'Currency': 'USD',
+                                            'Amount': Decimal('1.21')
+                                        }
+                                    }
+                                ],
+                                'Taxes': [],
+                                'VariableHandlingCharges': None
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            'ServiceType': 'FEDEX_GROUND',
+            'ServiceDescription': {
+                'ServiceType': 'FEDEX_GROUND',
+                'Code': '92',
+                'Names': [
+                    {
+                        'Type': 'long',
+                        'Encoding': 'utf-8',
+                        'Value': 'FedEx Ground®'
+                    },
+                    {
+                        'Type': 'long',
+                        'Encoding': 'ascii',
+                        'Value': 'FedEx Ground'
+                    },
+                    {
+                        'Type': 'medium',
+                        'Encoding': 'utf-8',
+                        'Value': 'Ground®'
+                    },
+                    {
+                        'Type': 'medium',
+                        'Encoding': 'ascii',
+                        'Value': 'Ground'
+                    },
+                    {
+                        'Type': 'short',
+                        'Encoding': 'utf-8',
+                        'Value': 'FG'
+                    },
+                    {
+                        'Type': 'short',
+                        'Encoding': 'ascii',
+                        'Value': 'FG'
+                    },
+                    {
+                        'Type': 'abbrv',
+                        'Encoding': 'ascii',
+                        'Value': 'SG'
+                    }
+                ],
+                'Description': 'FedEx Ground',
+                'AstraDescription': 'FXG'
+            },
+            'PackagingType': 'YOUR_PACKAGING',
+            'AppliedOptions': [],
+            'AppliedSubOptions': None,
+            'DeliveryStation': None,
+            'DeliveryDayOfWeek': None,
+            'DeliveryTimestamp': None,
+            'CommitDetails': [],
+            'DestinationAirportId': 'SEA',
+            'IneligibleForMoneyBackGuarantee': False,
+            'OriginServiceArea': None,
+            'DestinationServiceArea': None,
+            'TransitTime': None,
+            'MaximumTransitTime': None,
+            'SignatureOption': 'SERVICE_DEFAULT',
+            'ActualRateType': 'PAYOR_ACCOUNT_PACKAGE',
+            'RatedShipmentDetails': [
+                {
+                    'EffectiveNetDiscount': {
+                        'Currency': 'USD',
+                        'Amount': Decimal('0.0')
+                    },
+                    'AdjustedCodCollectionAmount': None,
+                    'ShipmentRateDetail': {
+                        'RateType': 'PAYOR_ACCOUNT_PACKAGE',
+                        'RateScale': None,
+                        'RateZone': '2',
+                        'PricingCode': None,
+                        'RatedWeightMethod': 'ACTUAL',
+                        'MinimumChargeType': None,
+                        'CurrencyExchangeRate': None,
+                        'SpecialRatingApplied': [],
+                        'DimDivisor': 0,
+                        'DimDivisorType': None,
+                        'FuelSurchargePercent': Decimal('7.0'),
+                        'TotalBillingWeight': {
+                            'Units': 'LB',
+                            'Value': Decimal('1.0')
+                        },
+                        'TotalDimWeight': None,
+                        'TotalBaseCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('7.85')
+                        },
+                        'TotalFreightDiscounts': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetFreight': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('7.85')
+                        },
+                        'TotalSurcharges': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.55')
+                        },
+                        'TotalNetFedExCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('8.4')
+                        },
+                        'TotalTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('8.4')
+                        },
+                        'TotalRebates': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalDutiesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalAncillaryFeesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalDutiesTaxesAndFees': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetChargeWithDutiesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('8.4')
+                        },
+                        'ShipmentLegRateDetails': [],
+                        'FreightRateDetail': None,
+                        'FreightDiscounts': [],
+                        'Rebates': [],
+                        'Surcharges': [
+                            {
+                                'SurchargeType': 'FUEL',
+                                'Level': 'PACKAGE',
+                                'Description': 'FedEx Ground Fuel',
+                                'Amount': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.55')
+                                }
+                            }
+                        ],
+                        'Taxes': [],
+                        'DutiesAndTaxes': [],
+                        'AncillaryFeesAndTaxes': [],
+                        'VariableHandlingCharges': None,
+                        'TotalVariableHandlingCharges': None
+                    },
+                    'RatedPackages': [
+                        {
+                            'TrackingIds': [],
+                            'GroupNumber': 1,
+                            'EffectiveNetDiscount': {
+                                'Currency': 'USD',
+                                'Amount': Decimal('0.0')
+                            },
+                            'AdjustedCodCollectionAmount': None,
+                            'OversizeClass': None,
+                            'PackageRateDetail': {
+                                'RateType': 'PAYOR_ACCOUNT_PACKAGE',
+                                'RatedWeightMethod': 'ACTUAL',
+                                'MinimumChargeType': None,
+                                'BillingWeight': {
+                                    'Units': 'LB',
+                                    'Value': Decimal('1.0')
+                                },
+                                'DimWeight': None,
+                                'OversizeWeight': None,
+                                'BaseCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('7.85')
+                                },
+                                'TotalFreightDiscounts': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'NetFreight': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('7.85')
+                                },
+                                'TotalSurcharges': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.55')
+                                },
+                                'NetFedExCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('8.4')
+                                },
+                                'TotalTaxes': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'NetCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('8.4')
+                                },
+                                'TotalRebates': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'FreightDiscounts': [],
+                                'Rebates': [],
+                                'Surcharges': [
+                                    {
+                                        'SurchargeType': 'FUEL',
+                                        'Level': 'PACKAGE',
+                                        'Description': 'FedEx Ground Fuel',
+                                        'Amount': {
+                                            'Currency': 'USD',
+                                            'Amount': Decimal('0.55')
+                                        }
+                                    }
+                                ],
+                                'Taxes': [],
+                                'VariableHandlingCharges': None
+                            }
+                        }
+                    ]
+                },
+                {
+                    'EffectiveNetDiscount': None,
+                    'AdjustedCodCollectionAmount': None,
+                    'ShipmentRateDetail': {
+                        'RateType': 'PAYOR_LIST_PACKAGE',
+                        'RateScale': None,
+                        'RateZone': '2',
+                        'PricingCode': None,
+                        'RatedWeightMethod': 'ACTUAL',
+                        'MinimumChargeType': None,
+                        'CurrencyExchangeRate': None,
+                        'SpecialRatingApplied': [],
+                        'DimDivisor': 0,
+                        'DimDivisorType': None,
+                        'FuelSurchargePercent': Decimal('7.0'),
+                        'TotalBillingWeight': {
+                            'Units': 'LB',
+                            'Value': Decimal('1.0')
+                        },
+                        'TotalDimWeight': None,
+                        'TotalBaseCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('7.85')
+                        },
+                        'TotalFreightDiscounts': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetFreight': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('7.85')
+                        },
+                        'TotalSurcharges': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.55')
+                        },
+                        'TotalNetFedExCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('8.4')
+                        },
+                        'TotalTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetCharge': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('8.4')
+                        },
+                        'TotalRebates': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalDutiesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalAncillaryFeesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalDutiesTaxesAndFees': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('0.0')
+                        },
+                        'TotalNetChargeWithDutiesAndTaxes': {
+                            'Currency': 'USD',
+                            'Amount': Decimal('8.4')
+                        },
+                        'ShipmentLegRateDetails': [],
+                        'FreightRateDetail': None,
+                        'FreightDiscounts': [],
+                        'Rebates': [],
+                        'Surcharges': [
+                            {
+                                'SurchargeType': 'FUEL',
+                                'Level': 'PACKAGE',
+                                'Description': 'FedEx Ground Fuel',
+                                'Amount': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.55')
+                                }
+                            }
+                        ],
+                        'Taxes': [],
+                        'DutiesAndTaxes': [],
+                        'AncillaryFeesAndTaxes': [],
+                        'VariableHandlingCharges': None,
+                        'TotalVariableHandlingCharges': None
+                    },
+                    'RatedPackages': [
+                        {
+                            'TrackingIds': [],
+                            'GroupNumber': 1,
+                            'EffectiveNetDiscount': None,
+                            'AdjustedCodCollectionAmount': None,
+                            'OversizeClass': None,
+                            'PackageRateDetail': {
+                                'RateType': 'PAYOR_LIST_PACKAGE',
+                                'RatedWeightMethod': 'ACTUAL',
+                                'MinimumChargeType': None,
+                                'BillingWeight': {
+                                    'Units': 'LB',
+                                    'Value': Decimal('1.0')
+                                },
+                                'DimWeight': None,
+                                'OversizeWeight': None,
+                                'BaseCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('7.85')
+                                },
+                                'TotalFreightDiscounts': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'NetFreight': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('7.85')
+                                },
+                                'TotalSurcharges': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.55')
+                                },
+                                'NetFedExCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('8.4')
+                                },
+                                'TotalTaxes': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'NetCharge': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('8.4')
+                                },
+                                'TotalRebates': {
+                                    'Currency': 'USD',
+                                    'Amount': Decimal('0.0')
+                                },
+                                'FreightDiscounts': [],
+                                'Rebates': [],
+                                'Surcharges': [
+                                    {
+                                        'SurchargeType': 'FUEL',
+                                        'Level': 'PACKAGE',
+                                        'Description': 'FedEx Ground Fuel',
+                                        'Amount': {
+                                            'Currency': 'USD',
+                                            'Amount': Decimal('0.55')
+                                        }
+                                    }
+                                ],
+                                'Taxes': [],
+                                'VariableHandlingCharges': None
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
