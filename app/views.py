@@ -4,19 +4,23 @@ from app.models import User
 from app.forms import LoginForm, RegistrationForm
 from flask_login import current_user, login_user
 from flask import Flask, request, render_template, redirect, url_for, flash
-from app.crunch import ups_rates
+from app.crunch import ups_rates, fedex_rates
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'GET':
         return render_template('usa.html', response=None, title='home')
     else:
-        ups = ups_rates(request.form.to_dict().values())
-        if isinstance(ups, pd.DataFrame):
-            ups_table = ups.to_html(classes='data', header='true')
-            return render_template('usa.html', rates=[ups_table], title='results')
+        params = request.form.to_dict().values()
+        ups = ups_rates(params)
+        fed = fedex_rates(params)
+        if isinstance(ups, pd.DataFrame) and isinstance(fed, pd.DataFrame):
+            rates = ups.append(fed)
+            rate_table = rates.to_html(classes='data', header='true')
+            return render_template('usa.html', rates=[rate_table], title='results')
         else:
-            flash(ups)
+            flash("UPS Request Returned: " + str(ups))
+            flash("FedEx Request Returned: " + str(fed))
             return render_template('usa.html', response=None, title='error - try again')
 
 @app.route('/login', methods=['GET', 'POST'])

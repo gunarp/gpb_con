@@ -1,18 +1,18 @@
 import json
 import re
+import os
 import xml.etree.ElementTree as ET
 from zeep import Client, Settings
 from zeep.exceptions import Fault, TransportError, XMLSyntaxError
 
 def get_rates(params, service_code):
+    basedir = os.path.abspath(os.path.dirname(__file__))
     # Set Connection
     settings = Settings(strict=False, xml_huge_tree=True)
-    client = Client('app/access/ups/SCHEMA-WSDLs/RateWS.wsdl', settings=settings)
-    # client = Client('SCHEMA-WSDLs/RateWS.wsdl', settings=settings)
+    client = Client(basedir + '/SCHEMA-WSDLs/RateWS.wsdl', settings=settings)
 
     # Get login info
-    with open('app/access/creds/creds.json', 'r') as f:
-    # with open('../creds/ups.json') as f:
+    with open(basedir + '/../creds/creds.json') as f:
         credentials = json.load(f)['ups']
 
     # Get dimensions and location

@@ -1,5 +1,7 @@
+import re
 import pandas as pd
-from app.access.ups.SoapRate import get_rates
+from app.access.ups.ups_rate import get_rates as ups
+from app.access.fedex.fedex_rate import get_rates as fed
 
 def ups_rates(params):
     ups_dom = {
@@ -12,17 +14,29 @@ def ups_rates(params):
         "UPS Next Day Air Saver": "13"
     }
     
-    rates = pd.DataFrame(columns=["Service", "Billable Weight",
+    rates = pd.DataFrame(columns=["Carrier", "Service", "Billable Weight",
                                   "Our Rate", "Published Rate"])
     for service_code in ups_dom:
-        rate_info = get_rates(params, ups_dom[service_code])
+        rate_info = ups(params, ups_dom[service_code])
         # If something bad happens to the request, stop
-
         if not isinstance(rate_info, list):
             return rate_info
         
         rates.loc[service_code] = \
-            pd.Series({'Service':service_code, 'Billable Weight': rate_info[0],
+            pd.Series({'Carrier': 'UPS', 'Service':re.sub('UPS ', '', service_code),
+                       'Billable Weight': rate_info[0],
                        'Our Rate': rate_info[1], 'Published Rate': rate_info[2]})
 
-    return rates
+    return rates.set_index(['Carrier', 'Service'])
+
+def fedex_rates(params):
+    rates = fed(params)
+    
+    def format(service):
+        tmp = re.sub('_', ' ', service).title()
+        tmp = re.sub('Am', 'AM', tmp)
+        return re.sub('Fedex ', '', tmp)
+    
+    rates['Service'] = rates['Service'].apply(format)
+    
+    return rates[::-1].set_index(['Carrier', 'Service'])
