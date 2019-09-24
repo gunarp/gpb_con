@@ -8,13 +8,14 @@ from zeep.exceptions import Fault, TransportError, XMLSyntaxError
 import pandas as pd
 from zeep.helpers import serialize_object
 
-def get_rates(params):
+def get_rates(acct, params):
     basedir = os.path.abspath(os.path.dirname(__file__))
     print(basedir)
 
     settings = Settings(strict=False, xml_huge_tree=False)
     client = Client(basedir + '/RateService_v26.wsdl', settings=settings)
 
+    password, api_key, ship_num, meter_num = acct
     zipcode, weight, length, width, height = params
 
     with open(basedir + "/../creds/creds.json", "r") as f:
@@ -23,13 +24,13 @@ def get_rates(params):
     RateRequestDict = {
         "WebAuthenticationDetail": {
             "UserCredential": {
-                "Key": credentials['api_key'],
-                "Password": credentials['password']
+                "Key": api_key,
+                "Password": password
             }
         },
         "ClientDetail": {
-            "AccountNumber": credentials['ship_num'],
-            "MeterNumber": credentials['meter_num']
+            "AccountNumber": ship_num,
+            "MeterNumber": meter_num
         },
         "Version": {
             "ServiceId": "crs",
@@ -63,7 +64,7 @@ def get_rates(params):
                 "PaymentType": "SENDER",
                 "Payor": {
                     "ResponsibleParty": {
-                        "AccountNumber": credentials['ship_num'] #TODO: Change in production
+                        "AccountNumber": ship_num #TODO: Change in production
                     }
                 }
             },

@@ -1,4 +1,6 @@
-<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+{extends "base.html"}
+
+{% block content %}
 
 <form method="POST" autocomplete="off">
     Zipcode:
@@ -14,3 +16,5 @@
 
     <input type="submit">
 </form>
+
+{% endblock %}

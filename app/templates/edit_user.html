@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Edit Account Details for {{ user.username }}</h1>
+
+<h2>UPS</h2>
+<form action="{{ url_for('edit_ups') }}" method="post">
+    {{ ups.hidden_tag() }}
+    {% for field in ups if field.widget.input_type != 'hidden' %}
+        <p>
+            {{ field.label }}<br>
+            {{ field(size=32) }}<br>
+            {% for error in field.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+    {% endfor %}
+</form>
+
+<h2>FedEx</h2>
+<form action="{{ url_for('edit_fdx') }}" method="post">
+    {{ fedex.hidden_tag() }}
+    {% for field in fedex if field.widget.input_type != 'hidden' %}
+        <p>
+            {{ field.label }}<br>
+            {{ field(size=32) }}<br>
+            {% for error in field.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+    {% endfor %}
+</form>
+
+{% for message in get_flashed_messages() %}
+    {{ message }}
+{% endfor %}
+
+{% endblock %}

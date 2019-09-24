@@ -21,3 +21,17 @@ class RegistrationForm(FlaskForm):
         user = User.query.filter_by(username=username.data).first()
         if user is not None:
             raise ValidationError('Please use a different username.')
+
+class EditUps(FlaskForm):
+    username = StringField('Username', validators=[DataRequired()])
+    password = StringField('Password', validators=[DataRequired()])
+    api_key = StringField('API Key', validators=[DataRequired()])
+    ship_num = StringField('Shipper Number', validators=[DataRequired()])
+    submit = SubmitField('Submit')
+
+class EditFedex(FlaskForm):
+    password = StringField('Password', validators=[DataRequired()])
+    api_key = StringField('API Key', validators=[DataRequired()])
+    ship_num = StringField('Shipper Number', validators=[DataRequired()])
+    meter_num = StringField('Meter Number', validators=[DataRequired()])
+    submit = SubmitField('Submit')

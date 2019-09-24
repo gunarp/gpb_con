@@ -8,6 +8,16 @@
     {% endif %}
 </head>
 
+<div class="nav">
+        <a href="{{ url_for('usa') }}">Home</a>
+    {% if current_user.is_anonymous %}
+        <a href="{{ url_for('login') }}">Login</a>    
+    {% else %}
+        <a href="{{ url_for('user', username=current_user.username) }}">Account</a>
+        <a href="{{ url_for('logout') }}">Logout</a>
+    {% endif %}   
+</div>
+
 {% block content %}{% endblock  %}
 
 </html>

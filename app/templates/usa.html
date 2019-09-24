@@ -2,26 +2,25 @@
 
 {% block content %}
 
-{% for message in get_flashed_messages() %}
-    {{ message }}
-{% endfor %}
-
-<div>
-<form method="POST" autocomplete="off">
+<div class="form_wrapper">
+<form method="POST" autocomplete="off" class="input_form">
     Zipcode:
-    <input type="text" name="zipcode" value="{{ request.form['zipcode'] }}" maxlength=5 requried>
+    <input type="text" name="zipcode" value="{{ request.form['zipcode'] }}" maxlength=5 requried class="input">
     Weight:
-    <input type="number" name="weight" value="{{ request.form['weight'] }}" min=1 requried>
+    <input type="number" name="weight" value="{{ request.form['weight'] }}" min=1 requried class="input">
     Length:
-    <input type="number" name="length" value="{{ request.form['length'] }}" min=1 max=1000 required>
+    <input type="number" name="length" value="{{ request.form['length'] }}" min=1 max=1000 required class="input">
     Width:
-    <input type="number" name="width" value="{{ request.form['width'] }}" min=1 max=1000 required>
+    <input type="number" name="width" value="{{ request.form['width'] }}" min=1 max=1000 required class="input">
     Height:
-    <input type="number" name="height" value="{{ request.form['height'] }}" min=1 max=1000 required>
+    <input type="number" name="height" value="{{ request.form['height'] }}" min=1 max=1000 required class="input">
     <input type="submit">
     </form>
 </div>
-<div><p><a href="{{ url_for('login') }}">Login</a></p></div>
+
+{% for message in get_flashed_messages() %}
+    {{ message }}
+{% endfor %}
 
 {% if response is not none %}
     {% for table in rates %}

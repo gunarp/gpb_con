@@ -5,15 +5,14 @@ import xml.etree.ElementTree as ET
 from zeep import Client, Settings
 from zeep.exceptions import Fault, TransportError, XMLSyntaxError
 
-def get_rates(params, service_code):
+def get_rates(acct, params, service_code):
     basedir = os.path.abspath(os.path.dirname(__file__))
     # Set Connection
     settings = Settings(strict=False, xml_huge_tree=True)
     client = Client(basedir + '/SCHEMA-WSDLs/RateWS.wsdl', settings=settings)
 
     # Get login info
-    with open(basedir + '/../creds/creds.json') as f:
-        credentials = json.load(f)['ups']
+    username, password, api_key, ship_num = acct
 
     # Get dimensions and location
     zipcode, weight, length, width, height = params
@@ -23,12 +22,12 @@ def get_rates(params, service_code):
 
         'UPSSecurity': {
             'UsernameToken': {
-                'Username': credentials['username'],
-                'Password': credentials['password']
+                'Username': username,
+                'Password': password
             },
 
             'ServiceAccessToken': {
-                'AccessLicenseNumber': credentials['api_key']
+                'AccessLicenseNumber': api_key
             }
 
         }
@@ -100,7 +99,7 @@ def get_rates(params, service_code):
                 "PostalCode": "98007",
                 "StateProvinceCode": "WA"
             },
-            "ShipperNumber": credentials['ship_num']
+            "ShipperNumber": ship_num
         },
             "ShipmentRatingOptions": {
                 "NegotiatedRatesIndicator": ""

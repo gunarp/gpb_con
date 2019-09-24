@@ -18,7 +18,6 @@ class User(UserMixin, db.Model):
     def check_password(self, password):
         return check_password_hash(self.password_hash, password)
 
-
 class UPS(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(64), index=True, unique=True)
@@ -33,9 +32,10 @@ class UPS(db.Model):
 
 class Fedex(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    api_key = db.Column(db.String(64))
     password = db.Column(db.String(64))
+    api_key = db.Column(db.String(64))
     ship_num = db.Column(db.String(64))
+    meter_num = db.Column(db.String(64))
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
 
     def __repr__(self):
