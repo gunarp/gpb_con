@@ -10,16 +10,12 @@ from zeep.helpers import serialize_object
 
 def get_rates(acct, params):
     basedir = os.path.abspath(os.path.dirname(__file__))
-    print(basedir)
 
     settings = Settings(strict=False, xml_huge_tree=False)
     client = Client(basedir + '/RateService_v26.wsdl', settings=settings)
 
     password, api_key, ship_num, meter_num = acct
     zipcode, weight, length, width, height = params
-
-    with open(basedir + "/../creds/creds.json", "r") as f:
-        credentials = json.load(f)['fedex']
 
     RateRequestDict = {
         "WebAuthenticationDetail": {
@@ -97,14 +93,21 @@ def get_rates(acct, params):
         
         for rate in rates:
             pkg = rate['RatedShipmentDetails'][0]['RatedPackages'][0]['PackageRateDetail']
+            disc = rate['RatedShipmentDetails'][0]['EffectiveNetDiscount']['Amount']
+
             rate = pd.Series({"Carrier": "FedEx",
                               "Service": rate['ServiceType'],
                               "Billable Weight": pkg['BillingWeight']['Value'],
-                              "Our Rate": pkg['NetCharge']['Amount'] - pkg['TotalRebates']['Amount'],
-                              "Published Rate": pkg['NetCharge']['Amount']})
+                              "Our Rate": pkg['NetCharge']['Amount'],
+                              "Published Rate": pkg['NetCharge']['Amount'] + disc})
             rate_details.loc[rate['Service']] = rate
         
         return rate_details
 
     except Fault as error:
         print(ET.tostring(error.detail))
+
+if __name__ == '__main__':
+    acct = ("v1Uy8I9j37bnxaiiTqQeYh2c8", "7gZ8jN6B2ATvZW0W", "329213269", "250438523")
+    params = (98007, 1, 1 ,1, 1)
+    get_rates(acct, params)

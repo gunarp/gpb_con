@@ -7,6 +7,7 @@ from flask import Flask, request, render_template, redirect, url_for, flash
 from app.crunch import ups_rates, fedex_rates
 
 @app.route('/', methods=['GET', 'POST'])
+@login_required
 def usa():
     if request.method == 'GET':
         return render_template('usa.html', response=None, title='home')
